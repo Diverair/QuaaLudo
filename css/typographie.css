@@ -12,6 +12,7 @@
     src: url("https://www.1001fonts.com/metropolis-font.html") format("otf")
 }
 
+
 h1{
     font-family: rotulista-regular, sans-serif;
     font-size: 24px;
@@ -21,10 +22,12 @@ h1{
     margin: 0 20px;
 }
 
-button>a{
+.boutons>div>a{
     font-family: rotulista-regular, sans-serif;
-    font-size: 24px;
+    font-size: 34px;
     text-decoration: none;
+    color: #6B1D07;
+
 }
 
 p{

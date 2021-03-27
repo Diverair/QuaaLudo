@@ -1,61 +1,97 @@
 body{
     margin: 0;
-    background-color: #1BA698;
     overflow: hidden;
-}
-
-body>img{
-    position: absolute;
-    object-fit: contain;
-    z-index: 0;
-    height: 100vh;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%)
-}
-
-.contenu{
-    position: relative;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0 30px;
-    z-index: 1;
-    background-color: #1BA698E6;
     text-align: center;
 }
 
+.Page{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
 .logo{
-    width: 100px;
+    width: 10%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top : 10px;
+    transform: translateX(-50%);
+}
+
+.contenu{
+    background-color: #F2F2F2;
+    width: 50%;
+    margin: 0;
+    height: 100%;
+    padding: 10% 0;
+}
+
+.fond{
+    background-color: #222222;
+    width: 50%;
+    margin: 0;
+    height: 100%;
 }
 
 .imgjeux{
-    height: 40%;
+    display: none;
+}
+
+.imgjeuxgde{
+    width: 100%;
     position: relative;
-    margin: 0 auto;
+    top: 20px;
 }
 
-p{
-    text-align: left;
+
+/* BOUTON carte de jeu*/
+
+.rejoins-nous{
+    background-color: #F2F2F2;
+    border: #29a7f5 8px solid;
+    width: 175px;
+    height: 268px;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: calc((100% - 175px * 2 - 4 * 8px - 30px)/2);
+    box-shadow: 0 0 50px #222222AA;
 }
 
-.rejoins-nous, .decouvrir-plus {
-    background-color: #1BA698;
-    border: #6B1D07 7px solid;
-    border-radius: 15px;
-    width: 250px;
-    height: 385px;
-    margin: 0 auto;
-    padding-top: 5px;
+.rejoins-nous>img{
+    width: 175px;
+    height: auto;
 }
 
-.rejoins-nous>a, .decouvrir-plus>a{
-    position: relative;
-    margin-top: 20px;
+.titre-carte{
+    display: flex;
+}
+
+.titre-carte>img{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
 }
 
 .decouvrir-plus{
-    transform: translateY(-340px);
-    position: relative;
-    z-index: 999;
+    background-color: #F2F2F2;
+    border: #DB0000 8px solid;
+    width: 175px;
+    height: 268px;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: 15px;
+    box-shadow: 0 0 50px #222222AA;
+}
+
+.decouvrir-plus>img{
+    width: 175px;
+    height: auto;
+}
+
+.boutons{
+    display: flex;
+    text-align: center;
 }

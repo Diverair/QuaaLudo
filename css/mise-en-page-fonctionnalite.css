@@ -1,0 +1,52 @@
+/* Version Ordinateur */
+body{
+    overflow: hidden;
+    margin: 0;
+}
+
+header>nav>ul{
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header>nav>ul>li{
+    width: 100%;
+}
+
+.slider{
+    display : flex;
+    width: 100vw;
+    margin: 0;
+}
+
+div {
+    width: 100%;
+}
+
+.slider>*{
+    box-sizing: border-box;
+    width: 100vw;
+    flex: none;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    padding: 10px;
+    text-align: left;
+}
+
+.slider{
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slider>div>{
+    position: center;
+}
+
+

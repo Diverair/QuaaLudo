@@ -1,7 +1,29 @@
-/* Version Ordinateur */
-body{
-    overflow: hidden;
-    margin: 0;
+/* Font Titre*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* Font Texte */
+@font-face {
+    font-family: "metropolis-regular";
+    src: url("https://www.1001fonts.com/metropolis-font.html") format("otf")
+}
+
+
+/* Header */
+header{
+    background-color: #268F2D;
+    height: 40px;
+    width: 100vw;
+}
+
+header>nav>ul>li>a{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #F2F2F2;
+    padding-top: 10px;
+}
+
+header>nav>ul>li{
+    margin-top: 5px;
 }
 
 header>nav>ul{
@@ -17,12 +39,17 @@ header>nav>ul>li{
     width: 100%;
 }
 
-.slider{
-    display : flex;
-    width: 100vw;
+
+
+/* Body */
+body{
+    overflow: hidden;
     margin: 0;
 }
 
+
+
+/* Slider*/
 div {
     width: 100%;
 }
@@ -33,7 +60,7 @@ div {
     flex: none;
     flex-shrink: 0;
     scroll-snap-align: center;
-    padding: 10px;
+    padding: 0;
     text-align: left;
 }
 
@@ -43,10 +70,264 @@ div {
     overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    margin: 0;
+    display: flex;
+    padding: 0;
 }
 
-.slider>div>{
-    position: center;
+body>div>div{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 0;
+    grid-gap: 5px;
+    overflow-y: inherit;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Source Serif Pro', serif;
+    margin: 20px 10px;
+    padding: 10px;
 }
 
 
+
+    /* Slide livret règles*/
+    .regle{
+        background-image: url("img/landing-page/jeu.jpeg");
+        background-size: cover;
+    }
+
+    .regle-texte{
+        display: flex;
+        grid-column: 1/25;
+        grid-row: 8/11;
+        margin: 0;
+        text-align: right;
+        color: #F2F2F2;
+        background-color: #157E1CD8;
+    }
+
+    .regle-texte>h2, p{
+        width: 100%;
+        margin: 30px;
+    }
+
+    .regle-texte>h2{
+        font-size: 60px;
+        text-align: center;
+    }
+
+
+    /* Slide Matériel*/
+    .materiel{
+        background-image: url("img/landing-page/ludothequepaysage.jpeg");
+        background-size: cover;
+    }
+
+    .materiel-titre{
+        grid-column: 10/15;
+        grid-row: 1/3;
+        text-align: center;
+        font-size: 40px;
+        color: #F2F2F2;
+        background-color: #157E1CD8;
+    }
+
+    .materiel-texte-tel{
+        grid-column: 4/8;
+        grid-row: 11/12;
+        text-align: center;
+        font-size: 25px;
+        margin: 5px 0;
+        padding: 5px 0 ;
+        background-color: #FFFFFFD8;
+        box-shadow: #F2F2F2 5px 0 40px;
+    }
+
+    .materiel-img-tel{
+        height: 60vh;
+        grid-column: 2/8;
+        grid-row: 3/13;
+    }
+
+    .materiel-texte-jeux{
+        grid-column: 13/17;
+        grid-row: 11/12;
+        text-align: center;
+        font-size: 25px;
+        margin: 5px 0;
+        padding: 5px 0 ;
+        background-color: #FFFFFFD8;
+        box-shadow: #F2F2F2 5px 0 40px;
+    }
+
+    .materiel-img-jeux{
+        background-image: url("img/landing-page/pile-de-jeux.png");
+        background-size: cover;
+        background-position: center;
+        grid-column: 9/16;
+        grid-row: 3/12;
+        background-color: #FFFFFFD8;
+        box-shadow: #F2F2F2 5px 0 40px;
+
+    }
+
+    .materiel-texte-amis{
+        grid-column: 21/25;
+        grid-row: 11/12;
+        text-align: center;
+        font-size: 25px;
+        margin: 5px 0;
+        padding: 5px 0 ;
+        background-color: #FFFFFFD8;
+        box-shadow: #F2F2F2 5px 0 40px;
+    }
+
+    .materiel-img-amis{
+    height: 60vh;
+    grid-column: 19/25;
+    grid-row: 3/13;
+}
+
+
+
+    /* Slide But du jeu*/
+    .but-titre{
+        grid-column: 10/15;
+        grid-row: 1/3;
+        text-align: center;
+        font-size: 40px;
+        color: #F2F2F2;
+        background-color: #157E1CD8;
+
+    }
+
+    .but-site{
+        grid-column: 2/11;
+        grid-row: 3/12;
+        background-color: #F2F2F2D8;
+        padding: 10px;
+    }
+
+    .but-fct{
+        grid-column: 14/22;
+        grid-row: 3/12;
+        background-color: #F2F2F2;
+        padding: 10px;
+    }
+
+    .but-site>p,
+    .but-fct>p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .but-site-img{
+        height: 100%;
+        grid-column: 9/14;
+        grid-row: 5/13;
+
+    }
+
+    .but-fct-img{
+        height: 100%;
+        grid-column: 20/25;
+        grid-row: 5/13;
+    }
+
+
+
+    /* Slide Mise en place */
+    .mise-en-place-titre{
+        grid-column: 9/16;
+        grid-row: 1/3;
+        text-align: center;
+        font-size: 40px;
+        color: #F2F2F2;
+        background-color: #157E1CD8;
+    }
+
+    .mise-en-place-texte{
+        grid-column: 2/24;
+        grid-row: 3/12;
+        background-color: #F2F2F2D8;
+        padding: 10px 20px;
+    }
+
+    .de{
+        width: 50px;
+    }
+
+    .des{
+        display: flex;
+    }
+
+    .des>p{
+        margin: 20px 20px;
+    }
+
+
+
+
+    /* Slide Déroulement du jeu */
+    .deroulement{
+
+    }
+
+    .deroulement-titre{
+        grid-column: 4/10;
+        grid-row: 1/4;
+        text-align: center;
+        font-size: 40px;
+        color: #F2F2F2;
+        background-color: #157E1CD8;
+    }
+
+    .deroulement-texte{
+        grid-column: 2/13;
+        grid-row: 4/12;
+        background-color: #F2F2F2D8;
+        margin: 0;
+    }
+
+    .info-sup-deroulement{
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+        grid-gap: 5px;
+        grid-column: 1/25;
+        grid-row: 1/5;
+        height: 100%;
+        padding: 10px 0;
+    }
+
+    .note-deroulement{
+        background-color: #222222D8;
+        margin: 0;
+        grid-column: 14/18;
+        height: 100%;
+    }
+
+    .PS-deroulement{
+        background-color: #222222D8;
+        margin: 0;
+        grid-column: 20/24;
+        height: 100%;
+    }
+
+    .fin-titre{
+        grid-column: 16/22;
+        grid-row: 6/8;
+        text-align: center;
+        font-size: 40px;
+        background-color: #F2F2F2D8;
+
+    }
+
+    .fin-texte{
+        grid-column: 14/24;
+        grid-row: 9/12;
+        background-color: #F2F2F2D8;
+        margin: 0;
+    }

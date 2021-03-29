@@ -3,79 +3,440 @@
 /* Font Texte */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
-/* Header */
-header{
-    background-color: #268F2D;
-    width: 100vw;
-    grid-column: 1/25;
-    grid-row: 1/2;
-    text-align: center;
-}
-
-header>h2{
-    font-size: 2vh;
-    text-decoration: none;
-    color: #F2F2F2;
-    position: relative;
-    top: 1vh;
-}
-
-
-
-
-/* Body */
-body{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    min-width: 1100px;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(25, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-gap: 5px;
-    background-image: url("img/landing-page/ludothequepaysage.jpeg");
-    background-size: cover;
-}
-
+/* Police */
 h1, h2, h3, h4, h5, h6{
     font-family: 'Source Serif Pro', serif;
 }
 
 p{
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
     margin: 0;
     padding: 10px;
+}
+
+/* Header */
+header{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: #268F2D;
+    display: flex;
+    text-align: center;
+}
+
+
+header>nav>a,
+header>nav>div>a{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 100%;
+    text-decoration: none;
+    color: #F2F2F2;
+    margin: 0 10px;
+}
+
+header>nav>.nav-titre>a>img{
+    width: 7vh;
+    margin: 10% 5%;
+}
+
+header>nav>.nav-titre>a{
+    font-size: 5vh;
+    margin: auto 10px;
+}
+
+header>nav>div>a{
+    margin: auto 5px;
+}
+
+header>nav>.nav-titre{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+
+header>nav{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 10vh;
+    width: 100%;
+    grid-column: 2/3;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.parties{
+    width: 100%;
+    height: 10vh;
+    animation: 600ms ease-in;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10% 24% 33% 33%;
+    grid-column: 2/3;
+    grid-row: 1/5;
+}
+
+header>a>img{
+    width: 7vh;
+    margin: 10% 5%;
+}
+
+header>a{
+    font-size: 5vh;
+    margin: auto 10px;
+    font-family: "Source Serif Pro", serif;
+    text-decoration: none;
+    color:#F2F2F2;
+    font-weight: bold;
+}
+
+    /* Position titre Nav */
+
+    .qui-sommes-nous-lien{
+        grid-column: 1/2;
+        grid-row: 3/5;
+        margin-bottom: 0;
+    }
+
+    .contact-lien{
+        grid-column: 2/3;
+        grid-row: 3/5;
+        margin-bottom: 0;
+    }
+
+
+    .active {
+        border-bottom: #F2F2F2 solid 5px;
+    }
+
+/* Body */
+body{
+    background-color: #222222;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    min-width: 1100px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body>img{
+    object-fit: cover;
+    width: 100%;
+    position: fixed;
+}
+
+/* Slider */
+div {
+    width: 100%;
+}
+
+.slider>*{
+    box-sizing: border-box;
+    width: 100vw;
+    flex: none;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    padding: 0;
     text-align: left;
 }
 
+.slider{
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    grid-column: 1/26;
+    grid-row: 3/19;
+    position: fixed;
+    z-index: 0;
+    top: 10vh;
 
-div{
+}
+
+
+
+.pres{
+    display: grid;
+    position: relative;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr 350px) 1fr;
+    grid-template-rows: 514px 40px 10vh;
     text-align: center;
-    padding: 0 10px 10px;
+    margin: auto 0;
 }
+
+.qui-sommes-nous{
+    position: relative;
+    top: 10vh;
+}
+.titre-contact{
+    position: relative;
+    left: 0;
+    background-color: #157E1CD8;
+    color: #F2F2F2;
+    text-align: center;
+    width: 33%;
+}
+
 .Nathan{
-    grid-row: 3/12;
-    grid-column: 2/9;
-    background-color: #f2cb05D8;
-    color: #222222;
+    border: #F2CB05 solid 20px;
+    border-radius: 15px;
+    background-color: #222222;
+    width: 310px;
+    height: 474px;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    color: #F2F2F2;
 }
+    /* Position Nathan */
+    .Nathan>div{
+        background-color: #F2CB05;
+        grid-column: 1/27;
+        grid-row: 23/28;
+        text-align: center;
+    }
+
+    .Nathan>div>h3{
+        padding: 10px;
+        margin: 0;
+        color: #222222;
+        height: calc(100% - 20px);
+        font-size: 25px;
+    }
+
+    .Nathan-logo{
+        width: 75%;
+        grid-column: 5/21;
+        grid-row: 5/21;
+    }
+
+    .logo-spe-Nathan{
+        width: 100%;
+        grid-column: 1/5;
+        grid-row: 1/5;
+        background-color: #F2CB05;
+        border: #F2CB05 solid 3px;
+        border-radius: 0 0 40px 0;
+    }
+
+    .Nathan>p{
+        grid-column: 2/25;
+        grid-row: 28/49;
+        text-align: left;
+    }
 
 .Raph{
-    grid-row: 3/12;
-    grid-column: 10/17;
-    background-color: #157E1CD8;
+    border: #157E1C solid 20px;
+    border-radius: 15px;
+    background-color: #222222;
+    grid-column: 4/5 ;
+    width: 310px;
+    height: 474px;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(50, 1fr);
     color: #F2F2F2;
 }
 
-.Benoit{
-    grid-row: 3/12;
-    grid-column: 18/25;
-    background-color: #29a7f5D8;
+    /* Position Raph */
+    .Raph>div{
+        background-color: #157E1C;
+        grid-column: 1/27;
+        grid-row: 23/28;
+        text-align: center;
+    }
+
+    .Raph>div>h3{
+        padding: 10px;
+        margin: 0;
+        color: #F2F2F2;
+        height: calc(100% - 20px);
+        font-size: 25px;
+    }
+
+    .Raph-logo{
+        width: 75%;
+        grid-column: 5/21;
+        grid-row: 5/21;
+    }
+
+    .logo-spe-Raph{
+        width: 100%;
+        grid-column: 1/5;
+        grid-row: 1/5;
+        background-color: #157E1C;
+        border: #157E1C solid 3px;
+        border-radius: 0 0 40px 0;
+    }
+
+    .Raph>p{
+        grid-column: 2/24;
+        grid-row: 28/49;
+        text-align: left;
+    }
+
+
+
+.Benoit {
+    border: #DB0000 solid 20px;
+    border-radius: 15px;
+    background-color: #222222;
+    grid-column: 6/7;
+    width: 310px;
+    height: 474px;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    color: #F2F2F2;
+}
+
+    /* Position Benoit */
+    .Benoit>div{
+        background-color: #DB0000;
+        grid-column: 1/27;
+        grid-row: 23/28;
+        text-align: center;
+    }
+
+    .Benoit>div>h3{
+        padding: 10px;
+        margin: 0;
+        color: #F2F2F2;
+        height: calc(100% - 20px);
+        font-size: 25px;
+    }
+
+    .Benoit-logo{
+        width: 75%;
+        grid-column: 5/21;
+        grid-row: 5/21;
+    }
+
+    .logo-spe-Benoit{
+        width: 100%;
+        grid-column: 1/5;
+        grid-row: 1/5;
+        background-color: #DB0000;
+        border: #DB0000 solid 3px;
+        border-radius: 0 0 40px 0;
+    }
+
+    .Benoit>p{
+        grid-column: 2/24;
+        grid-row: 28/49;
+        text-align: left;
+    }
+
+/* équipe QuaeLudo */
+.equipe{
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: #222222d8;
+    margin: 0 auto;
+    display: flex;
+    grid-column: 3/6;
+    grid-row: 3/4;
+    text-align: center;
+    border: 10px solid #157E1C;
+    border-right-color: #DB0000;
+    border-bottom-color: #F2CB05;
+    border-left-color: #29a7f5;
+}
+
+.equipe>h2{
+    width: 100%;
+    color: #F2F2F2;
+    font-size: 5vh;
+    margin: 1vh 0;
+}
+
+/* Contact */
+.contact{
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 10vh;
+}
+
+.moyen-de-contact{
+    text-align: center;
+    width: 50%;
+    background-color: #F2F2F2D8;
+    color: #222222;
+    margin: 0 auto 50px;
+    border: 10px solid #157E1C;
+    border-right-color: #DB0000;
+    border-bottom-color: #F2CB05;
+    border-left-color: #29a7f5;
+
+}
+
+.mailto>h2,
+.Postale>h2{
+    color: #222222;
+    font-size: 40px;
+}
+
+.mailto>a,
+.Postale>p{
+    color: #333333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+hr{
+    width: 40%;
     color: #222222;
 }
 
 
+/* Footer */
+footer{
+    position: relative;
+    top: 100vh;
+    bottom: 0;
+    height: 20vh;
+    background-color: #222222;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+}
+
+footer>nav{
+    width: 50%;
+}
+
+.reseaux{
+    width: 20%;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+footer>nav>ul>li{
+    background-color: #157E1C;
+    border: #F2F2F2;
+    padding: 5px 15px;
+    border-radius: 15px 5px;
+    margin: 20px auto;
+}
+
+footer>nav>ul>li>a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 30px;
+    margin: 0;
+
+}

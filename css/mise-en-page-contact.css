@@ -1,0 +1,81 @@
+/* Font Titre*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* Font Texte */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* Header */
+header{
+    background-color: #268F2D;
+    width: 100vw;
+    grid-column: 1/25;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+header>h2{
+    font-size: 2vh;
+    text-decoration: none;
+    color: #F2F2F2;
+    position: relative;
+    top: 1vh;
+}
+
+
+
+
+/* Body */
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    min-width: 1100px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 5px;
+    background-image: url("img/landing-page/ludothequepaysage.jpeg");
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Source Serif Pro', serif;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+
+div{
+    text-align: center;
+    padding: 0 10px 10px;
+}
+.Nathan{
+    grid-row: 3/12;
+    grid-column: 2/9;
+    background-color: #f2cb05D8;
+    color: #222222;
+}
+
+.Raph{
+    grid-row: 3/12;
+    grid-column: 10/17;
+    background-color: #157E1CD8;
+    color: #F2F2F2;
+}
+
+.Benoit{
+    grid-row: 3/12;
+    grid-column: 18/25;
+    background-color: #29a7f5D8;
+    color: #222222;
+}
+
+

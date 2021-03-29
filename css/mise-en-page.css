@@ -95,3 +95,13 @@ body{
     display: flex;
     text-align: center;
 }
+
+.decouvrir-plus:hover{
+    transform: translatey(-20px);
+    transition: ease-in 0.5s;
+}
+
+.rejoins-nous:hover{
+    transform: translatey(-20px);
+    transition: ease-in 0.5s;
+}

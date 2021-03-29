@@ -1,50 +1,124 @@
 /* Font Titre*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 /* Font Texte */
-@font-face {
-    font-family: "metropolis-regular";
-    src: url("https://www.1001fonts.com/metropolis-font.html") format("otf")
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 
 /* Header */
 header{
     background-color: #268F2D;
-    height: 40px;
+    height: 10vh;
     width: 100vw;
+    grid-column: 1/26;
+    grid-row: 1/3;
+    position: fixed;
+    z-index: 99;
 }
 
-header>nav>ul>li>a{
+header>nav>a,
+header>nav>div>a{
     font-family: 'Source Serif Pro', serif;
-    font-size: 20px;
+    font-size: 100%;
     text-decoration: none;
     color: #F2F2F2;
-    padding-top: 10px;
+    margin: 0 10px;
 }
 
-header>nav>ul>li{
-    margin-top: 5px;
+header>nav>.nav-titre>a>img{
+    width: 7vh;
+    margin: 10% 5%;
 }
 
-header>nav>ul{
+header>nav>.nav-titre>a{
+    font-size: 5vh;
+    margin: auto 10px;
+}
+
+header>nav>div>a{
+    margin: auto 5px;
+}
+
+header>nav>.nav-titre{
     display: flex;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+
+header>nav{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100%;
     width: 100%;
+    grid-column: 2/3;
     list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-header>nav>ul>li{
+.slides{
     width: 100%;
+    height: 100%;
+    animation: 600ms ease-in;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% 24% 33% 33%;
+    grid-column: 2/3;
+    grid-row: 1/5;
 }
+
+
+
+    /* Position titre Nav */
+
+    .nav-slide-un{
+        grid-column: 1/2;
+        grid-row: 3/5;
+        margin-bottom: 0;
+    }
+
+    .nav-slide-deux{
+        grid-column: 2/3;
+        grid-row: 3/5;
+        margin-bottom: 0;
+    }
+
+    .nav-slide-trois{
+        grid-column: 3/4;
+        grid-row: 3/5;
+        margin-bottom: 0;
+    }
+
+    .nav-slide-quatre{
+        grid-column: 4/5;
+        grid-row: 3/5;
+        margin-bottom: 0;
+    }
+
+    .nav-slide-cinq {
+        grid-column: 5/6;
+        grid-row: 3/5;
+        margin-bottom: 0;
+    }
+
+    .active {
+        border-bottom: #F2F2F2 solid 5px;
+    }
+
+
 
 
 
 /* Body */
 body{
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
+    background-color: #222222;
+    height: 100vh;
+    min-height: 600px;
+    min-width: 1100px;
+
 }
 
 
@@ -73,12 +147,17 @@ div {
     margin: 0;
     display: flex;
     padding: 0;
+    grid-column: 1/26;
+    grid-row: 3/19;
+    position: fixed;
+    z-index: 0;
+    top: 10vh;
 }
 
 body>div>div{
     display: grid;
     height: 80vh;
-    grid-template-columns: repeat(24, 1fr);
+    grid-template-columns: repeat(25, 1fr);
     grid-template-rows: repeat(12, 1fr);
     padding: 0;
     grid-gap: 5px;
@@ -87,10 +166,14 @@ body>div>div{
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Source Serif Pro', serif;
-    margin: 20px 10px;
-    padding: 10px;
 }
 
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+}
 
 
     /* Slide livret règles*/
@@ -101,22 +184,25 @@ h1, h2, h3, h4, h5, h6{
 
     .regle-texte{
         display: flex;
-        grid-column: 1/25;
-        grid-row: 8/11;
+        grid-column: 1/26;
+        grid-row: 9/12;
+        min-height: max-content;
         margin: 0;
         text-align: right;
         color: #F2F2F2;
         background-color: #157E1CD8;
     }
 
-    .regle-texte>h2, p{
+    .regle-texte>h2,
+    .regle-texte>p{
         width: 100%;
-        margin: 30px;
+        margin: auto 20px auto 0;
     }
 
     .regle-texte>h2{
         font-size: 60px;
         text-align: center;
+        margin: auto 0;
     }
 
 
@@ -127,8 +213,8 @@ h1, h2, h3, h4, h5, h6{
     }
 
     .materiel-titre{
-        grid-column: 10/15;
-        grid-row: 1/3;
+        grid-column: 1/10;
+        grid-row: 1/2;
         text-align: center;
         font-size: 40px;
         color: #F2F2F2;
@@ -136,67 +222,73 @@ h1, h2, h3, h4, h5, h6{
     }
 
     .materiel-texte-tel{
-        grid-column: 4/8;
+        grid-column: 5/9;
         grid-row: 11/12;
         text-align: center;
         font-size: 25px;
         margin: 5px 0;
         padding: 5px 0 ;
-        background-color: #FFFFFFD8;
-        box-shadow: #F2F2F2 5px 0 40px;
+        background-color: #29a7f5;
+        color: #222222;
+        font-family: "Source Serif Pro", serif;
+        font-weight: bold;
     }
 
     .materiel-img-tel{
         height: 60vh;
-        grid-column: 2/8;
+        grid-column: 3/9;
         grid-row: 3/13;
     }
 
     .materiel-texte-jeux{
-        grid-column: 13/17;
+        grid-column: 14/18;
         grid-row: 11/12;
         text-align: center;
         font-size: 25px;
         margin: 5px 0;
         padding: 5px 0 ;
-        background-color: #FFFFFFD8;
-        box-shadow: #F2F2F2 5px 0 40px;
+        background-color: #DB0000;
+        color: #F2F2F2;
+        font-family: "Source Serif Pro", serif;
+        font-weight: bold;
     }
 
     .materiel-img-jeux{
         background-image: url("img/landing-page/pile-de-jeux.png");
         background-size: cover;
         background-position: center;
-        grid-column: 9/16;
+        grid-column: 10/17;
         grid-row: 3/12;
         background-color: #FFFFFFD8;
-        box-shadow: #F2F2F2 5px 0 40px;
-
     }
 
     .materiel-texte-amis{
-        grid-column: 21/25;
+        grid-column: 22/26;
         grid-row: 11/12;
         text-align: center;
         font-size: 25px;
         margin: 5px 0;
         padding: 5px 0 ;
-        background-color: #FFFFFFD8;
-        box-shadow: #F2F2F2 5px 0 40px;
+        background-color: #F2CB05;
+        color: #222222;
+        font-family: "Source Serif Pro", serif;
+        font-weight: bold;
     }
 
     .materiel-img-amis{
-    height: 60vh;
-    grid-column: 19/25;
-    grid-row: 3/13;
-}
+        height: 60vh;
+        grid-column: 20/26;
+        grid-row: 3/13;
+    }
+
+
 
 
 
     /* Slide But du jeu*/
     .but-titre{
-        grid-column: 10/15;
-        grid-row: 1/3;
+        grid-column: 1/10;
+        grid-row: 1/2;
         text-align: center;
         font-size: 40px;
         color: #F2F2F2;
@@ -209,22 +301,29 @@ h1, h2, h3, h4, h5, h6{
         grid-row: 3/12;
         background-color: #F2F2F2D8;
         padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        text-align: center;
     }
 
     .but-fct{
-        grid-column: 14/22;
+        grid-column: 14/23;
         grid-row: 3/12;
         background-color: #F2F2F2;
         padding: 10px;
     }
 
-    .but-site>p,
+    .but-site>p{
+        margin: 0;
+        padding: 5px;
+    }
     .but-fct>p{
         margin: 0;
         padding: 0;
     }
 
-    .but-site-img{
+    .video-3D{
         height: 100%;
         grid-column: 9/14;
         grid-row: 5/13;
@@ -233,52 +332,152 @@ h1, h2, h3, h4, h5, h6{
 
     .but-fct-img{
         height: 100%;
-        grid-column: 20/25;
+        grid-column: 21/25;
         grid-row: 5/13;
     }
+
+    /* But Site Disposition */
+    .but-site>img{
+        height: 20%;
+    }
+
+    .but-site>p:first-child{
+        grid-column: 1/10;
+        grid-row: 1/3;
+    }
+
+    .but-site>.groupe-img{
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
+
+    .but-site>.jeux-img{
+        grid-column: 2/4;
+        grid-row: 5/7;
+    }
+
+    .but-site>.temps-img{
+        grid-column: 2/4;
+        grid-row: 8/10;
+    }
+
+    .but-site>.but-texte-groupe{
+        grid-column: 3/6;
+        grid-row: 3/4;
+        background-color: #F2CB05D8;
+    }
+
+    .but-site>.but-texte-jeux{
+        grid-column: 3/6;
+        grid-row: 6/7;
+        background-color: #DB0000D8;
+        color: #F2F2F2;
+    }
+    .but-site>.but-texte-temps{
+        grid-column: 3/6;
+        grid-row: 9/10;
+        background-color: #29a7f5D8;
+    }
+
+
 
 
 
     /* Slide Mise en place */
+    .mise-en-place{
+        background-image: url("img/landing-page/installationjeux.jpeg");
+        background-size: cover;
+    }
+
     .mise-en-place-titre{
-        grid-column: 9/16;
-        grid-row: 1/3;
+        grid-column: 1/10;
+        grid-row: 1/2;
         text-align: center;
         font-size: 40px;
         color: #F2F2F2;
         background-color: #157E1CD8;
+
     }
 
     .mise-en-place-texte{
-        grid-column: 2/24;
-        grid-row: 3/12;
+        grid-column: 2/25;
+        grid-row: 2/12;
         background-color: #F2F2F2D8;
-        padding: 10px 20px;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: repeat(5, 10px 1fr) 10px;
+        height: max-content;
     }
 
     .de{
         width: 50px;
+        margin: 0 0 0 20px;
     }
 
-    .des{
-        display: flex;
+    /* Div des position */
+    .deun{
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
 
-    .des>p{
-        margin: 20px 20px;
+    .dedeux{
+        grid-column: 1/2;
+        grid-row: 4/5;
     }
+    .detrois{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .dequatre{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    .decinq{
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+
+    .texteun{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    .textedeux{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        width: 100%;
+    }
+
+    .textetrois{
+        grid-column: 2/3;
+        grid-row: 6/7;
+        width: 100%;
+    }
+    .textequatre{
+        grid-column: 2/3;
+        grid-row: 8/9;
+        width: 100%;
+    }
+    .textecinq{
+        grid-column: 2/3;
+        grid-row: 10/11;
+        width: 100%;
+    }
+
 
 
 
 
     /* Slide Déroulement du jeu */
     .deroulement{
-
+        background-image: url("img/landing-page/deroulementjeu.jpeg");
+        background-size: cover;
     }
 
     .deroulement-titre{
-        grid-column: 4/10;
-        grid-row: 1/4;
+        grid-column: 1/10;
+        grid-row: 1/2;
         text-align: center;
         font-size: 40px;
         color: #F2F2F2;
@@ -287,8 +486,12 @@ h1, h2, h3, h4, h5, h6{
 
     .deroulement-texte{
         grid-column: 2/13;
-        grid-row: 4/12;
+        grid-row: 2/12;
         background-color: #F2F2F2D8;
+        margin: 0;
+        height: max-content;
+    }
+    .deroulement-texte>ul{
         margin: 0;
     }
 
@@ -296,38 +499,76 @@ h1, h2, h3, h4, h5, h6{
         display: grid;
         grid-template-columns: repeat(24, 1fr);
         grid-gap: 5px;
-        grid-column: 1/25;
-        grid-row: 1/5;
+        grid-column: 2/25;
+        grid-row: 6/12;
         height: 100%;
-        padding: 10px 0;
     }
 
     .note-deroulement{
-        background-color: #222222D8;
+        background-color: #f2cb05D8;
         margin: 0;
-        grid-column: 14/18;
-        height: 100%;
+        grid-column: 14/19;
+        grid-row: 6/12;
+        height: calc(100% - 20px);
     }
 
     .PS-deroulement{
-        background-color: #222222D8;
-        margin: 0;
-        grid-column: 20/24;
-        height: 100%;
+        background-color: #29A7F5D8;
+        grid-column: 20/25;
+        grid-row: 6/12;
+        height: calc(100% - 20px);
     }
 
     .fin-titre{
-        grid-column: 16/22;
-        grid-row: 6/8;
+        grid-column: 17/26;
+        grid-row: 1/2;
         text-align: center;
         font-size: 40px;
-        background-color: #F2F2F2D8;
-
+        color: #F2F2F2;
+        background-color: #157E1CD8;
     }
 
     .fin-texte{
-        grid-column: 14/24;
-        grid-row: 9/12;
+        grid-column: 14/25;
+        grid-row: 2/5;
         background-color: #F2F2F2D8;
         margin: 0;
     }
+
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: #222222;
+    position: relative;
+    z-index: 55;
+    top: 90vh;
+}
+
+footer>nav{
+    width: 50%;
+}
+
+.reseaux{
+    width: 20%;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+footer>nav>ul>li{
+    background-color: #157E1C;
+    border: #F2F2F2;
+    padding: 5px 15px;
+    border-radius: 15px 5px;
+    margin: 20px auto;
+}
+
+footer>nav>ul>li>a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 30px;
+    margin: 0;
+
+}
+
+

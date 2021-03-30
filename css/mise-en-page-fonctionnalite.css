@@ -45,6 +45,8 @@ body{
     height: 100vh;
     width: calc(100vw - 10px);
     overflow-x: hidden;
+    min-width: 1100px;
+    min-height: 700px;
 }
 
 .Inscription{
@@ -132,13 +134,21 @@ button.inscription{
 
 /* Accueil */
 .accueil,
-.fonctionnalite,
-.PageContact{
+.fonctionnalite{
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(25, 1fr);
-    grid-template-rows: 75px repeat(24, 1fr);
-    grid-gap: 5px;
+    grid-template-rows: 82px repeat(24, 1fr);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.PageContact{
+    display: grid;
+    height: 110vh;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: 82px repeat(24, 1fr);
     margin: 0;
     position: relative;
     z-index: 1;
@@ -252,6 +262,22 @@ button.inscription{
     grid-row: 2/25;
 }
 
+.fonctionnalite>nav{
+    grid-column: 1/26;
+    grid-row: 2/3;
+    display: flex;
+    text-align: center;
+}
+
+.fonctionnalite>nav>a{
+    width: 20%;
+}
+
+.fonctionnalite>nav>a>h3{
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
 .slider>*{
     box-sizing: border-box;
     width: calc(100vw - 10px);
@@ -266,7 +292,7 @@ button.inscription{
 
     /* Slide livret règles*/
     .regle{
-        background-image: url("img/landing-page/jeu.jpeg");
+        background-image: url("img/Landing-page/jeu.jpeg");
         background-size: cover;
     }
     
@@ -296,7 +322,7 @@ button.inscription{
     
     /* Slide Matériel*/
     .materiel{
-        background-image: url("img/landing-page/ludothequepaysage.jpeg");
+        background-image: url("img/Landing-page/ludothequepaysage.jpeg");
         background-size: cover;
     }
     
@@ -324,7 +350,7 @@ button.inscription{
     }
     
     .materiel-img-jeux{
-        background-image: url("img/landing-page/pile-de-jeux.png");
+        background-image: url("img/Landing-page/pile-de-jeux.png");
         background-size: cover;
         background-position: center;
         grid-column: 10/17;
@@ -458,7 +484,7 @@ button.inscription{
     
     /* Slide Mise en place */
     .mise-en-place{
-        background-image: url("img/landing-page/installationjeux.jpeg");
+        background-image: url("img/Landing-page/installationjeux.jpeg");
         background-size: cover;
     }
     
@@ -549,8 +575,10 @@ button.inscription{
     
     /* Slide Déroulement du jeu */
     .deroulement{
-        background-image: url("img/landing-page/deroulementjeu.jpeg");
+        background-image: url("img/Landing-page/deroulementjeu.jpeg");
         background-size: cover;
+        position: relative;
+        top: calc(82 + 1fr);
     }
     
     .deroulement-titre{
@@ -567,9 +595,19 @@ button.inscription{
         grid-row: 2/12;
         background-color: #F2F2F2D8;
         margin: 0;
-        height: max-content;
     }
-    
+
+    .deroulement-texte>p{
+        margin: 10px;
+    }
+
+    .fin-texte,
+    .note-deroulement,
+    .PS-deroulement{
+        padding: 10px;
+        margin: 0;
+    }
+
     .deroulement-texte>ul{
         margin: 0;
     }
@@ -619,20 +657,23 @@ button.inscription{
 
 
 /* A propos */
-
 .pres{
     display: grid;
     position: relative;
     width: 100vw;
+    height: 80vh;
     grid-template-columns: repeat(3, 1fr 350px) 1fr;
-    grid-template-rows: 514px 40px 10vh;
+    grid-template-rows: 504px 40px 10vh;
     text-align: center;
     margin: auto 0;
 
 }
 
-.qui-sommes-nous{
+.qui-sommes-nous,
+.contact{
     position: relative;
+    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-size: cover;
 }
 
 .titre-contact{
@@ -674,18 +715,15 @@ button.inscription{
     }
 
     .Nathan-logo{
-        width: 75%;
-        grid-column: 5/21;
+        width: 100%;
+        grid-column: 7/20;
         grid-row: 5/21;
     }
 
-    .logo-spe-Nathan{
-        width: 100%;
-        grid-column: 1/5;
-        grid-row: 1/5;
-        background-color: #F2CB05;
-        border: #F2CB05 solid 3px;
-        border-radius: 0 0 40px 0;
+    .fond-spe-Nathan{
+        grid-column: 2/4;
+        grid-row: 3/4;
+
     }
 
     .Nathan>p{
@@ -726,12 +764,12 @@ button.inscription{
     }
 
     .Raph-logo{
-        width: 75%;
-        grid-column: 5/21;
+        width: 100%;
+        grid-column: 7/20;
         grid-row: 5/21;
     }
 
-    .logo-spe-Raph{
+    .fond-spe-Raph{
         width: 100%;
         grid-column: 1/5;
         grid-row: 1/5;
@@ -778,12 +816,12 @@ button.inscription{
     }
 
     .Benoit-logo{
-        width: 75%;
-        grid-column: 5/21;
+        width: 100%;
+        grid-column: 7/20;
         grid-row: 5/21;
     }
 
-    .logo-spe-Benoit{
+    .fond-spe-Benoit{
         width: 100%;
         grid-column: 1/5;
         grid-row: 1/5;
@@ -796,6 +834,11 @@ button.inscription{
         grid-column: 2/24;
         grid-row: 28/49;
         text-align: left;
+    }
+
+    /* Logos spé */
+    .logo-spe{
+        width: 100%;
     }
 
 /* équipe QuaeLudo */
@@ -829,6 +872,10 @@ button.inscription{
     height: 80vh;
     position: relative;
     top: 10vh;
+    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-size: cover;
+    grid-column: 1/26;
+    grid-row: 2/13;
 }
 
 .moyen-de-contact{
@@ -855,4 +902,66 @@ button.inscription{
     color: #333333;
     text-decoration: none;
     font-size: 24px;
+}
+
+
+
+
+/* Footer */
+footer{
+    width: 100vw;
+    height: max-content;
+    background-color: #222222;
+    text-align: center;
+}
+
+.tableau-footer{
+    display: flex;
+    color: #FAFAFA;
+}
+
+.menu-footer>a>h1,
+.menu-footer>a>h3,
+.mailto-footer>a,
+.text-mentions-legales>p,
+.text-mentions-legales>p>a{
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Source Serif Pro", serif;
+}
+
+.menu-footer,
+.mailto-footer,
+.reseaux-footer{
+    width: 100%;
+}
+
+.reseaux-footer{
+    display: flex;
+    text-align: center;
+}
+.reseaux-footer>a{
+    margin: auto;
+}
+
+.reseaux-footer>a>img{
+    width: 100px;
+    height: auto;
+    color: #FAFAFA;
+}
+
+.mentions-legales{
+    display: flex;
+    width: 100%;
+}
+
+.mentions-legales>img{
+    width: 200px;
+    height: auto;
+    margin: auto 20px ;
+}
+
+.mentions-legales>.text-mentions-legales{
+    width: 100%;
 }

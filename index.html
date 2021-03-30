@@ -1,47 +1,262 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>Quae Ludo | Landing-Page</title>
-    <link rel="stylesheet" href="css/typographie.css">
-    <link rel="stylesheet" href="css/mise-en-page.css">
-
+    <title>QuaeLudo</title>
+    <link rel="stylesheet" href="css/mise-en-page-fonctionnalite.css">
 </head>
 <body>
-<div class="Page">
-    <div class="contenu">
-        <h1 class="green">Trouvez les jeux de société qui vous correspondent.</h1>
-        <p>Quaeludo se base sur vos jeux préférés, et vous propose des centaines de jeux susceptibles de vous plaire.</p>
-        <img src="css/img/landing-page/pile-de-jeux.png" alt="illustration de pile de jeux de sociétés" class="imgjeux">
-        <h1 class="red">Et mes amis ?</h1>
-        <p>Pas de problème. Vous pouvez inviter des amis dans un groupe et nous vous proposerons des jeux adaptés aux goûts de chacun.</p>
-        <div class="boutons">
-            <div class="rejoins-nous">
-                <div class="titre-carte">
-                    <img src="css/img/Logo/logo.png" alt="Logo version écriture et contours noirs">
-                    <a href="" class="blue">Rejoins-nous !</a>
-                    <img src="css/img/Logo/logo.png" alt="Logo version écriture et contours noirs">
-                </div>
-                <img src="css/img/landing-page/pile-de-jeux.png" alt="illustration de pile de jeux de sociétés">
-            </div>
+<header>
+    <nav>
+        <a href="#landingpage"><img src="css/img/Logo/logo.png" alt="Logo QuaeLudo"></a>
+        <a href="#landingpage" class="titre-actif"><h1>QuaeLudo</h1></a>
+        <a href="#fonctionnalites"><h3>Fonctionnalité</h3></a>
+        <a href="#PartieContact"><h3>À propos</h3></a>
+        <a href="mentions-legales.html"><h3>Mentions Légales</h3></a>
 
-            <div class="decouvrir-plus">
-                <div class="titre-carte">
-                    <img src="css/img/Logo/logo.png" alt="Logo version écriture et contours noirs">
-                    <a href="fonctionnalite.html" class="red">Décourvrir +</a>
-                    <img src="css/img/Logo/logo.png" alt="Logo version écriture et contours noirs">
+        <button class="inscription">S'inscrire</button>
+    </nav>
+</header>
+<div class="Page">
+    <div class="Inscription">
+        <div class="module-inscription">
+            <h2>Inscription</h2>
+            <h6>Inscrivez-vous pour ne rien rater !</h6>
+            <form action="#" id="formulaire">
+                <label for="formulaire"><input type="email">Adresse Mail</label>
+                <button>Valider</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="accueil" id="landingpage">
+        <div class="accueil-texte">
+            <h2>Ne perdez plus de temps à chercher votre jeux de société</h2>
+            <p>Notre site internet est là pour vous aider, rentrez les différentes informations demandées et nous nous occupons du reste. <br> Se décider sur un jeu de société n'aura jamais été aussi rapide.</p>
+
+            <div class="boutons">
+                <div class="rejoins-nous">
+                    <div class="titre-carte">
+                        <img src="css/img/Logo/logo.png" alt="Logo version écriture et contours noirs">
+                        <a href="#landingpage" class="blue">Rejoins-nous !</a>
+                        <img src="css/img/Logo/logo.png" alt="Logo version écriture et contours noirs">
+                    </div>
+                    <img src="css/img/landing-page/pile-de-jeux.png" alt="illustration de pile de jeux de sociétés">
                 </div>
-                <img src="css/img/landing-page/pile-de-jeux.png" alt="illustration de pile de jeux de sociétés">
+
+                <div class="decouvrir-plus">
+                    <div class="titre-carte">
+                        <img src="css/img/Logo/logo.png" alt="Logo version écriture et contours noirs">
+                        <a href="#fonctionnalites" class="red">Décourvrir +</a>
+                        <img src="css/img/Logo/logo.png" alt="Logo version écriture et contours noirs">
+                    </div>
+                    <img src="css/img/landing-page/pile-de-jeux.png" alt="illustration de pile de jeux de sociétés">
+                </div>
+            </div>
+        </div>
+        <img src="css/img/landing-page/tel-accueil.png" alt="Accueil version Mobile iPhone X">
+    </div>
+
+    <div class="fonctionnalite" id="fonctionnalites">
+        <div class="slider">
+            <div id="pos-1" class="regle" style="--dist: 0">
+                <div class="regle-texte">
+                    <h2>Livret de règles</h2>
+                    <p>Vous ne savez plus à quoi jouer, ou vous en avez marre de passer 4h à vous décider ? Vous tombez bien. Notre site internet va résoudre votre problème avec quelques coups de cartes. Je vous présente Quae Ludo, votre assistant qui vous accompagnera dans vos étapes de choix du jeu auquel vous allez jouer.</p>
+                </div>
+            </div>
+            <div id="pos-2" class="materiel" style="--dist: 1">
+                <h2 class="materiel-titre">Matériel</h2>
+                <img src="css/img/landing-page/tel-accueil.png" class="materiel-img-tel" alt="">
+                <div class="materiel-img-jeux"></div>
+                <img src="css/img/landing-page/tel-accueil.png" class="materiel-img-amis" alt="">
+                <p class="materiel-texte-tel">Un téléphone</p>
+                <p class="materiel-texte-jeux">Vos jeux</p>
+                <p class="materiel-texte-amis">Vos amis</p>
+
+            </div>
+            <div id="pos-3" class="but" style="--dist: 2">
+                <h2 class="but-titre">But du jeu</h2>
+                <div class="but-site">
+                    <p>Pour vous aider à choisir votre jeu, nous nous basons sur un certain nombre de critères.</p>
+                    <img src="css/img/Criteres/groupe.png" class="groupe-img" alt="">
+                    <img src="css/img/Criteres/temps.png" class="temps-img" alt="">
+                    <img src="css/img/Criteres/jeu.png" class="jeux-img" alt="">
+                    <p class="but-texte-groupe">Votre groupe d'amis</p>
+                    <p class="but-texte-jeux">Le type de jeux</p>
+                    <p class="but-texte-temps">Une durée</p>
+                </div>
+
+                <video src="css/video/fct-choix-jeu.mp4" autoplay muted loop class="video-3D"></video>
+
+                <div class="but-fct">
+                    <p>Il vous proposera 2 catégories de jeux. <br><br> - Parmi les jeux que vous vous possédez (dans votre ludothèque).<br><br> - Des jeux susceptibles de vous plaire en fonction de vos habitudes de jeux et des jeux que vous possédez et préférez.</p>
+                </div>
+
+                <img src="css/img/landing-page/tel-accueil.png" class="but-fct-img" alt="">
+            </div>
+            <div id="pos-4" class="mise-en-place" style="--dist: 3">
+                <h2 class="mise-en-place-titre">Mise en  place</h2>
+
+                <div class="mise-en-place-texte">
+                    <img src="css/img/Des/dice-one-solid.svg" class="de deun" alt="">
+                    <p class="de texteun">Allumez votre téléphone et rendez vous sur la page <a href="https://quaeludo.raphbonin.fr">https://quaeludo.raphbonin.fr</a> ou bien scannez le QR-Code suivant.</p>
+                    <img src="css/img/Des/dice-two-solid.svg" class="de dedeux" alt="">
+                    <p class="de textedeux">La première chose à faire est de vous inscrire gratuitement.</p>
+                    <img src="css/img/Des/dice-three-solid.svg" class="de detrois" alt="">
+                    <p class="de textetrois">Indiquez les différentes informations qui vous sont demandée sur votre page de profil.</p>
+                    <img src="css/img/Des/dice-four-solid.svg" class="de dequatre" alt="">
+                    <p class="de textequatre">Créez votre ludothèque et ajoutez s'y tout les jeux que vous possédez.</p>
+                    <img src="css/img/Des/dice-five-solid.svg" class="de decinq" alt="">
+                    <p class="de textecinq">Créez un groupe et ajoutez s'y vos amis.</p>
+                </div>
+            </div>
+            <div id="pos-5" class="deroulement" style="--dist: 4">
+                <h2 class="deroulement-titre">Déroulement du jeu</h2>
+
+                <div class="deroulement-texte">
+                    <p>Lorsque vous voudrez choisir votre jeu, il vous suffira d'utiliser la fonction "<strong>choix du jeu</strong>". et remplir les informations suivante</p>
+                    <ul>
+                        <li><p>Vous devrez choisir votre/vos partenaire(s) de jeux. Vous aurez la possibilité de sélectionner le groupe que vous voulez.</p></li>
+                        <li><p>Choississez un type de jeu dans les catégories proposées.</p></li>
+                        <li><p>Indiquer le temps que vous avez pour jouer. Cela nous permettra de faire le tri pour vous.</p></li>
+                    </ul>
+                    <p>Et voilà c'est tout ce que vous avez à faire. Nous nous occupons du reste.</p>
+                    <p>On vous à légèrement menti, ce n'est pas tout, vous n'aurez plus qu'à choisir le jeu qui vous convient dans ceux que nous vous proposons. Vous aurez le choix d'un jeu qui se trouve dans la ludothéque que vous avez choisie, ou bien dans les jeux que nous vous proposons via notre programme d'affiliation avec Amazon.</p>
+                </div>
+
+                <p class="note-deroulement">Note : Vous pouvez également suivre ce QR-Code pour vous rendre directement sur la page Choix du jeu.</p>
+                <p class="PS-deroulement">PS : Vous aurez la possibilité de passer cette étape en passant par la page de votre groupe et de cliquer sur le bouton <strong>Jouer avec eux ! </strong> et pour votre seconde option sera de créer un groupe temporaire.</p>
+
+
+                <h2 class="fin-titre">Fin de partie</h2>
+                <p class="fin-texte">Et voilà, cette fois ci c'est tout, il ne vous reste plus qu'à vous installer confortablement, d'installer le jeu et de profitez d'une soirée en famille/entre amis autour d'un bon jeu de société.</p>
             </div>
         </div>
     </div>
-    <img src="css/img/Logo/logo.png" alt="Logo Quae Ludo" class="logo">
-    <div class="fond">
-        <img src="css/img/landing-page/pile-de-jeux.png" alt="illustration de pile de jeux de sociétés" class="imgjeuxgde">
+
+    <div class="PageContact" ID="PartieContact">
+        <div class="slider slidercontact">
+            <div id="presentation" class="qui-sommes-nous">
+                <div class="titre-contact">
+                    <h2>Qui somme nous ?</h2>
+                </div>
+                <div class="pres">
+
+                    <div class="Nathan">
+                        <img src="" alt="logo-com" class="logo-spe-Nathan">
+                        <img src="css/img/Contact/avatar_nathan.png" class="Nathan-logo" alt="">
+                        <div>
+                            <h3>Nathan BAUMANN</h3>
+                        </div>
+                        <p>Je considère le web comme l'avenir de notre société. Utilisateur fréquent des réseaux sociaux et manager de plusieurs comptes, j'ai acquis des connaissances en communication et management. Etant passionné de sports mécaniques, mon rêve serait d'être pilote professionnel. <br>Je suis ainsi le responsable communication et mercatique de QuaeLudo.</p>
+                    </div>
+
+                    <div class="Raph">
+                        <img src="css/img/Contact/raph.png" alt="logo-dev" class="logo-spe-Raph">
+                        <img src="css/img/Contact/avatar-raph.png" class="Raph-logo" alt="">
+                        <div>
+                            <h3>Raphaël BONIN</h3>
+                        </div>
+                        <p>Je passe une bonne partie du temps devant mon écran pour développer, concevoir des pièces en 3D ou encore monter des vidéos, que je filme lorsque je sors avec mon matériel, dont mon drone. Mon rêve est de devenir télépilote de drone professionnel. <br>Je suis le geek de ce groupe étant le responsable développement de ce projet.</p>
+                    </div>
+
+                    <div class="Benoit">
+                        <img src="" alt="logo-design" class="logo-spe-Benoit">
+                        <img src="css/img/Contact/avatar-benoit.png" class="Benoit-logo" alt="">
+                        <div>
+                            <h3>Benoît CLAUDE</h3>
+                        </div>
+                        <p>Passionné par l'art et la culture, j'aime créer toute sorte de contenu artistique, que ce soit du design, de la musique ou autre. J'aime partager mes passions et inviter mes amis à les partager avec moi. Mon rêve est de devenir designer, dans le graphisme ou dans le son. Le temps affinera mon choix. <br>Je m'occupe de la partie design de Quaeludo.</p>
+                    </div>
+
+                    <div class="equipe">
+                        <h2>L'équipe Quae Ludo</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="contact">
+                <div class="titre-contact">
+                    <h2>Contact</h2>
+                </div>
+                <div class="moyen-de-contact">
+                    <div class="mailto">
+                        <h2>Par mail</h2>
+                        <a href="mailto:quaeludo@gmail.com">quaeludo@gmail.com</a>
+                    </div>
+
+                    <div class="Postale">
+                        <h2>Adresse</h2>
+                        <p>4 place Tharradin,<br>25200, Montbéliard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+
+<script>
+
+    (function () {
+        /* Mode strict, pour éviter des erreurs basiques */
+        "use strict";
+
+        /* Sélectionne tous les a de la page */
+        const lista = document.querySelectorAll('header>nav>a');
+        let scrollAnchors = document.querySelector('header>nav');
+        let scrollParent = document.querySelector('Body>div.Page');
+        let buttoninscriptionnav = document.querySelector('header>nav>button');
+        let carteinscription = document.querySelector('.rejoins-nous');
+        let formulaireinscription = document.querySelector('.Inscription');
+        let validationinscription = document.querySelector('.module-inscription>form>button');
+        console.log(scrollParent);
+
+
+        function affichageformulaire(){
+            formulaireinscription.classList.remove('Inscription');
+            formulaireinscription.classList.add('active');
+        }
+
+        function fermetureformulaire(){
+            formulaireinscription.classList.add('Inscription');
+            formulaireinscription.classList.remove('active');
+        }
+
+        function eventScroll() {
+            scrollAnchors.querySelector('.titre-actif').classList.remove('titre-actif');
+            let pos = (scrollParent.scrollTop / scrollParent.clientHeight) | 0;
+            console.log(pos);
+            scrollAnchors.children[pos].classList.add('titre-actif');
+        }
+
+        /* Code qui sera exécuté */
+        function effeta() {
+            let nouv = this;
+            let titreactif = document.querySelector(".titre-actif");
+            titreactif.classList.remove('titre-actif');
+            nouv.classList.add('titre-actif');
+        }
+
+        /* Boucle Pour tous les a*/
+
+
+        for (let i = 0; i < lista.length; i++) {
+            const una = lista[i];
+            una.addEventListener("click", effeta);
+        }
+
+        scrollParent.addEventListener("scroll",eventScroll);
+
+        buttoninscriptionnav.addEventListener("click", affichageformulaire);
+        carteinscription.addEventListener("click", affichageformulaire);
+        validationinscription.addEventListener("click", fermetureformulaire);
+
+    }());
+
+
+
+</script>
+
 </body>
 </html>
-

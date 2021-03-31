@@ -54,15 +54,7 @@ body{
 
 }
 
-.module-inscription{
-    position: relative;
-    top:50%;
-    left: 50%;
-    width: 40%;
-    height: 40%;
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
-}
+
 
 .active{
     display: block;
@@ -74,6 +66,57 @@ body{
     height: 100vh;
     background-color: #222222D8;
     overflow: hidden;
+}
+
+
+
+/* Module Inscription */
+.module-inscription{
+    position: relative;
+    top:50%;
+    left: 50%;
+    width: 40%;
+    height: max-content;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background-color: #222222;
+}
+.module-inscription>button{
+    background-color: #157E1C;
+    width: 50%;
+    height: 50px;
+    border: 1px solid #157E1C;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    color: #FAFAFA;
+}
+
+
+.module-inscription>h2{
+    color: #FAFAFA;
+    font-family: "Source Serif Pro", serif;
+    font-size: 50px;
+    margin: 50px 0 30px;
+}
+
+.module-inscription>h6{
+    color: #FAFAFA;
+    font-family: "Source Serif Pro", serif;
+    font-size: 25px;
+    margin: 50px 0 20px;
+}
+
+#formulaire>label>input{
+    width: 50%;
+    height: 25px;
+    margin-bottom: 20px;
+    background-color: #555;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    color: #FAFAFA;
+    text-align: center;
 }
 
 
@@ -129,9 +172,6 @@ button.inscription{
 }
 
 
-
-
-
 /* Accueil */
 .accueil,
 .fonctionnalite{
@@ -167,7 +207,7 @@ button.inscription{
 
 
     /* BOUTON carte de jeu*/
-    
+
     .rejoins-nous{
         background-color: #FAFAFA;
         border: #29a7f5 8px solid;
@@ -178,16 +218,16 @@ button.inscription{
         margin-left: calc((100% - 175px * 2 - 4 * 8px - 30px)/2);
         box-shadow: 0 0 50px #222222AA;
     }
-    
+
     .rejoins-nous>img{
         width: 175px;
         height: auto;
     }
-    
+
     .titre-carte{
         display: flex;
     }
-    
+
     .titre-carte>img{
         width: 25px;
         height: 25px;
@@ -200,7 +240,7 @@ button.inscription{
         width: 100%;
         font-size: 15px;
     }
-    
+
     .decouvrir-plus{
         background-color: #FAFAFA;
         border: #DB0000 8px solid;
@@ -211,25 +251,34 @@ button.inscription{
         margin-left: 15px;
         box-shadow: 0 0 50px #222222AA;
     }
-    
+
+
     .decouvrir-plus>img{
         width: 175px;
         height: auto;
     }
-    
+
     .boutons{
         display: flex;
         text-align: center;
     }
-    
+
     .decouvrir-plus:hover{
         transform: translatey(-20px);
         transition: ease-in 0.5s;
     }
-    
+
     .rejoins-nous:hover{
         transform: translatey(-20px);
         transition: ease-in 0.5s;
+    }
+
+    .blue{
+        color: #29a7f5;
+    }
+
+    .red{
+        color: #DB0000;
     }
 
 
@@ -262,20 +311,22 @@ button.inscription{
     grid-row: 2/25;
 }
 
-.fonctionnalite>nav{
+
+
+.nav-slide{
     grid-column: 1/26;
-    grid-row: 2/3;
+    grid-row: 25/26;
     display: flex;
     text-align: center;
+    width: 100%;
 }
 
-.fonctionnalite>nav>a{
+.nav-slide>a{
     width: 20%;
 }
 
-.fonctionnalite>nav>a>h3{
-    font-size: 16px;
-    margin: 10px 0 5px;
+.nav-slide>a>h3{
+    font-family: "Source Serif Pro", serif;
 }
 
 .slider>*{
@@ -286,6 +337,7 @@ button.inscription{
     scroll-snap-align: center;
     padding: 0;
     text-align: left;
+    overflow-y: scroll;
 }
 
 
@@ -383,111 +435,115 @@ button.inscription{
     }
     
     
-        /* Slide But du jeu*/
-        .but-titre{
-            grid-column: 1/10;
-            grid-row: 1/2;
-            text-align: center;
-            font-size: 40px;
-            color: #F2F2F2;
-            background-color: #157E1CD8;
-        
-        }
-        
-        .but-site{
-            grid-column: 2/11;
-            grid-row: 3/12;
-            background-color: #F2F2F2D8;
-            padding: 10px;
-            display: grid;
-            grid-template-columns: repeat(9, 1fr);
-            grid-template-rows: repeat(9, 1fr);
-            text-align: center;
-        }
-        
-        .but-fct{
-            grid-column: 14/23;
-            grid-row: 3/12;
-            background-color: #F2F2F2;
-            padding: 10px;
-        }
-        
-        .but-site>p{
-            margin: 0;
-            padding: 5px;
-        }
-        
-        .but-fct>p{
-            margin: 0;
-            padding: 0;
-        }
-        
-        .video-3D{
-            height: 100%;
-            grid-column: 9/14;
-            grid-row: 5/13;
-        
-        }
-        
-        .but-fct-img{
-            height: 100%;
-            grid-column: 21/25;
-            grid-row: 5/13;
-        }
-        
-        /* But Site Disposition */
-        .but-site>img{
-            height: 20%;
-        }
-        
-        .but-site>p:first-child{
-            grid-column: 1/10;
-            grid-row: 1/3;
-        }
-        
-        .but-site>.groupe-img{
-            grid-column: 2/4;
-            grid-row: 2/4;
-        }
-        
-        .but-site>.jeux-img{
-            grid-column: 2/4;
-            grid-row: 5/7;
-        }
-        
-        .but-site>.temps-img{
-            grid-column: 2/4;
-            grid-row: 8/10;
-        }
-        
-        .but-site>.but-texte-groupe{
-            grid-column: 3/6;
-            grid-row: 3/4;
-            background-color: #F2CB05D8;
-        }
-        
-        .but-site>.but-texte-jeux{
-            grid-column: 3/6;
-            grid-row: 6/7;
-            background-color: #DB0000D8;
-            color: #F2F2F2;
-        }
-        .but-site>.but-texte-temps{
-            grid-column: 3/6;
-            grid-row: 9/10;
-            background-color: #29a7f5D8;
-        }
-    
-    
-    
-    
-    
+    /* Slide But du jeu*/
+    .but{
+        background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+        background-size: cover;
+    }
+    .but-titre{
+        grid-column: 1/10;
+        grid-row: 1/2;
+        text-align: center;
+        font-size: 40px;
+        color: #F2F2F2;
+        background-color: #157E1CD8;
+
+    }
+
+    .but-site{
+        grid-column: 2/11;
+        grid-row: 3/12;
+        background-color: #F2F2F2D8;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        text-align: center;
+    }
+
+    .but-fct{
+        grid-column: 14/23;
+        grid-row: 3/12;
+        background-color: #F2F2F2;
+        padding: 10px;
+    }
+
+    .but-site>p{
+        margin: 0;
+        padding: 5px;
+    }
+
+    .but-fct>p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .but-site-img{
+        height: 100%;
+        grid-column: 9/14;
+        grid-row: 5/13;
+
+    }
+
+    .but-fct-img{
+        height: 100%;
+        grid-column: 21/25;
+        grid-row: 5/13;
+    }
+
+    /* But Site Disposition */
+    .but-site>img{
+        height: 20%;
+    }
+
+    .but-site>p:first-child{
+        grid-column: 1/10;
+        grid-row: 1/3;
+    }
+
+    .but-site>.groupe-img{
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
+
+    .but-site>.jeux-img{
+        grid-column: 2/4;
+        grid-row: 5/7;
+    }
+
+    .but-site>.temps-img{
+        grid-column: 2/4;
+        grid-row: 8/10;
+    }
+
+    .but-site>.but-texte-groupe{
+        grid-column: 3/6;
+        grid-row: 3/4;
+        background-color: #F2CB05D8;
+    }
+
+    .but-site>.but-texte-jeux{
+        grid-column: 3/6;
+        grid-row: 6/7;
+        background-color: #DB0000D8;
+        color: #F2F2F2;
+    }
+    .but-site>.but-texte-temps{
+        grid-column: 3/6;
+        grid-row: 9/10;
+        background-color: #29a7f5D8;
+    }
+
+
+
+
+
     /* Slide Mise en place */
     .mise-en-place{
         background-image: url("img/Landing-page/installationjeux.jpeg");
         background-size: cover;
     }
-    
+
     .mise-en-place-titre{
         grid-column: 1/10;
         grid-row: 1/2;
@@ -495,9 +551,9 @@ button.inscription{
         font-size: 40px;
         color: #F2F2F2;
         background-color: #157E1CD8;
-    
+
     }
-    
+
     .mise-en-place-texte{
         grid-column: 2/25;
         grid-row: 2/12;
@@ -507,72 +563,77 @@ button.inscription{
         grid-template-rows: repeat(5, 10px 1fr) 10px;
         height: max-content;
     }
-    
+
     .de{
-        width: 50px;
-        margin: 0 0 0 20px;
+        width: 40px;
+        margin: auto 0;
     }
-    
+
         /* Div des position */
         .deun{
             grid-column: 1/2;
             grid-row: 2/3;
+            margin: 0 auto;
         }
-        
+
         .dedeux{
             grid-column: 1/2;
             grid-row: 4/5;
+            margin: 0 auto;
         }
-        
+
         .detrois{
             grid-column: 1/2;
             grid-row: 6/7;
+            margin: 0 auto;
         }
-        
+
         .dequatre{
             grid-column: 1/2;
             grid-row: 8/9;
+            margin: 0 auto;
         }
-        
+
         .decinq{
             grid-column: 1/2;
             grid-row: 10/11;
+            margin: 0 auto;
         }
-        
+
         .texteun{
             grid-column: 2/3;
             grid-row: 2/3;
             width: 100%;
         }
-        
+
         .textedeux{
             grid-column: 2/3;
             grid-row: 4/5;
             width: 100%;
         }
-        
+
         .textetrois{
             grid-column: 2/3;
             grid-row: 6/7;
             width: 100%;
         }
-        
+
         .textequatre{
             grid-column: 2/3;
             grid-row: 8/9;
             width: 100%;
         }
-        
+
         .textecinq{
-        grid-column: 2/3;
-        grid-row: 10/11;
-        width: 100%;
-    }
-    
-    
-    
-    
-    
+            grid-column: 2/3;
+            grid-row: 10/11;
+            width: 100%;
+        }
+
+
+
+
+
     /* Slide Déroulement du jeu */
     .deroulement{
         background-image: url("img/Landing-page/deroulementjeu.jpeg");
@@ -580,7 +641,7 @@ button.inscription{
         position: relative;
         top: calc(82 + 1fr);
     }
-    
+
     .deroulement-titre{
         grid-column: 1/10;
         grid-row: 1/2;
@@ -589,7 +650,7 @@ button.inscription{
         color: #F2F2F2;
         background-color: #157E1CD8;
     }
-    
+
     .deroulement-texte{
         grid-column: 2/13;
         grid-row: 2/12;
@@ -611,7 +672,7 @@ button.inscription{
     .deroulement-texte>ul{
         margin: 0;
     }
-    
+
     .info-sup-deroulement{
         display: grid;
         grid-template-columns: repeat(24, 1fr);
@@ -620,7 +681,7 @@ button.inscription{
         grid-row: 6/12;
         height: 100%;
     }
-    
+
     .note-deroulement{
         background-color: #f2cb05D8;
         margin: 0;
@@ -628,14 +689,14 @@ button.inscription{
         grid-row: 6/12;
         height: calc(100% - 20px);
     }
-    
+
     .PS-deroulement{
         background-color: #29A7F5D8;
         grid-column: 20/25;
         grid-row: 6/12;
         height: calc(100% - 20px);
     }
-    
+
     .fin-titre{
         grid-column: 17/26;
         grid-row: 1/2;
@@ -644,7 +705,7 @@ button.inscription{
         color: #F2F2F2;
         background-color: #157E1CD8;
     }
-    
+
     .fin-texte{
         grid-column: 14/25;
         grid-row: 2/5;
@@ -660,7 +721,7 @@ button.inscription{
 .pres{
     display: grid;
     position: relative;
-    width: 100vw;
+    width: calc(100vw - 10px);
     height: 80vh;
     grid-template-columns: repeat(3, 1fr 350px) 1fr;
     grid-template-rows: 504px 40px 10vh;
@@ -674,6 +735,10 @@ button.inscription{
     position: relative;
     background-image: url("img/Landing-page/ludothequepaysage.jpeg");
     background-size: cover;
+}
+
+.qui-sommes-nous{
+    overflow-y: scroll;
 }
 
 .titre-contact{
@@ -913,6 +978,7 @@ footer{
     height: max-content;
     background-color: #222222;
     text-align: center;
+    padding: 20px 0;
 }
 
 .tableau-footer{
@@ -937,18 +1003,20 @@ footer{
     width: 100%;
 }
 
-.reseaux-footer{
+.reseaux-footer-ligne{
     display: flex;
+    width: 100%;
     text-align: center;
 }
-.reseaux-footer>a{
+.reseaux-footer>div>a{
     margin: auto;
 }
 
-.reseaux-footer>a>img{
-    width: 100px;
+.reseaux-footer>div>a>img{
+    width: 75px;
     height: auto;
     color: #FAFAFA;
+    margin: auto;
 }
 
 .mentions-legales{
@@ -964,4 +1032,5 @@ footer{
 
 .mentions-legales>.text-mentions-legales{
     width: 100%;
+    max-width: max-content;
 }

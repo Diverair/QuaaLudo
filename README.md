@@ -1,2 +1,2 @@
 # QuaeLudo
-Site internet dans le cadre de notre projet de 2nd semestre à l'IUT de Belfort - Montbeliard, au département MMI.
+Site internet dans le cadre de notre projet de second semestre à l'IUT de Belfort - Montbéliard, au département MMI.

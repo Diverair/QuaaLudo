@@ -30,5 +30,6 @@ class Joueur {
         $this->categoriepref = $categoriepref;
     }
 
+        // Test push
 
 }

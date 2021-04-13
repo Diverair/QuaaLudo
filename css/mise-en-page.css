@@ -1,6 +1,7 @@
+/* Général */
 body{
     height: 100vh;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0;
     text-align: center;
 }
@@ -38,31 +39,38 @@ header>div>svg{
     height: 50px;
 }
 
-.logo-nom>h4{
+.logo-nom>h4 {
     margin: 0;
     padding: 5px 15px;
-    color: #FAFAFA;
-    font-size: 30px;
 }
 
-h2{
-    font-size: 40px;
+svg{
+    cursor: pointer;
 }
 
-section{
-    position: relative;
-    z-index: 1;
-    height: calc((90vh - 150px)/2);
-    margin: auto 0;
-    vertical-align: center;
-}
+/* Spécifique */
+    /* inscriptionconnexion.html*/
+    section{
+        position: relative;
+        z-index: 1;
+        height: calc((90vh - 150px)/2);
+        margin: auto 0;
+        vertical-align: center;
+    }
 
-button{
-    background-color: #157E1C;
-    border-radius: 40px;
-    border: #157E1C solid 1px;
-    width: 60%;
-    height: 80px;
-    color: #FAFAFA;
-    font-size: 34px;
-}
+    button{
+        background-color: #157E1C;
+        border-radius: 40px;
+        border: #157E1C solid 1px;
+        width: 60%;
+        height: 80px;
+    }
+
+
+
+
+    /* inscription.php */
+    form{
+        position: relative;
+        z-index: 1;
+    }

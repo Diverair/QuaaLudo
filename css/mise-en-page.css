@@ -40,7 +40,7 @@ header>div>svg{
     height: 50px;
 }
 
-.logo-nom>h4 {
+.logo-nom>a {
     margin: 0;
     padding: 5px 15px;
 }
@@ -68,7 +68,7 @@ header>div>svg{
 
 
 
-    /* inscription.php */
+    /* inscription.html */
     form{
         position: relative;
         z-index: 1;

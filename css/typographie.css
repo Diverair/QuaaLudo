@@ -10,10 +10,9 @@ h2{
 
 
 /* Spécifique */
-    /* page incriptionconnexion.hmtl */
-    .logo-nom>h4{
-        margin: 0;
-        padding: 5px 15px;
+    /* page inscriptionconnexion.hmtl */
+    .logo-nom>a{
+
         color: #FAFAFA;
         font-size: 30px;
     }

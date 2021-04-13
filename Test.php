@@ -9,16 +9,20 @@
 </head>
 <body>
     <?php require_once 'BDD/Classes/class.Groupe.php';
-                        ini_set('display_errors', 1);
-                        ini_set('display_startup_errors', 1);
-                        error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
 
     <div>
         <form action="Test.php" method="post">
             <p>
-                <input type="text" name="Nom">
-                <input type="text" name="Description">
+                <label>
+                    <input type="text" name="Nom">
+                </label>
+                <label>
+                    <input type="text" name="Description">
+                </label>
                 <input type="submit" value="valider">
             </p>
         </form>

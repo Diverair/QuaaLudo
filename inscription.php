@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" sizes="16x16" href="css/img/Logo/logo.png">
     <title>Quae Ludo | Inscription</title>
-    <!--<link rel="stylesheet" href="css/mise-en-page.css">
-    <link rel="stylesheet" href="css/typographie.css">-->
+    <link rel="stylesheet" href="css/mise-en-page.css">
+    <link rel="stylesheet" href="css/typographie.css">
 </head>
 <body>
-<?php   require_once    'BDD/Classes/class.Joueur.php';
+<?php   require_once 'BDD/Classes/class.Joueur.php';
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
         error_reporting(E_ALL);
-        ?>
+?>
 <header>
     <div class="bouton-compte">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -37,14 +37,16 @@
     </div>
     <div class="logo-nom">
         <img src="css/img/Logo/logo.png" class="logo-header" alt="Logo Quae Ludo">
-        <h4>Quae Ludo</h4>
+        <a href="accueil.html">Quae Ludo</a>
     </div>
     <div class="bouton-annuler">
         <svg xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 352 512">
             <path fill="#FAFAFA"
                   d="M242.72 256l100.07-100.07
-                  c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0
+                  c12.28-12.28 12.28-32.19 0-44.48
+                  l-22.24-22.24
+                  c-12.28-12.28-32.19-12.28-44.48 0
                   L176 189.28 75.93 89.21
                   c-12.28-12.28-32.19-12.28-44.48 0
                   L9.21 111.45
@@ -115,8 +117,33 @@
               stroke-miterlimit="10"
               stroke-width="3"/>
     </svg>
-
     <form action="inscription.php" method="post">
+        <p>
+            <label>
+                <input type="text" name="Pseudo" value="Pseudo" onclick="this.select()">
+            </label>
+            <label>
+                <input type="text" name="NOM" value="NOM" onclick="this.select()">
+            </label>
+            <label>
+                <input type="text" name="Prenom" value="Prénom" onclick="this.select()">
+            </label>
+            <label>
+                <input type="date" name="datenaissance" value="Date de Naissance"  onclick="this.select()">
+            </label>
+            <label>
+                <input type="text" name="AdresseMail" value="Adresse mail" onclick="this.select()">
+            </label>
+            <label>
+                <input type="text" name="Mdp" value="Mot-de-passe" onclick="this.select()">
+            </label>
+            <label>
+                <input type="text" name="ConfirmationMdp" value="Confimation mot-de-passe" onclick="this.select()">
+            </label>
+            <input type="submit" value="valider">
+        </p>
+    </form>
+    <!--<form action="inscription.php" method="post">
         <p>
             <label>
                 <input type="text" name="Pseudo" value="Pseudo" onclick="this.select()">
@@ -197,21 +224,21 @@
                 <input type="text" name="ConfirmationMdp" value="Confimation mot-de-passe" onclick="this.select()">
             </label>
             <input type="submit" value="valider">
-    </form>
+    </form>-->
 </div>
 <?php
-    if(isset($_POST['id']) AND isset($_POST['Pseudo']) AND isset($_POST['NOM']) AND isset($_POST['Prenom']) AND isset($_POST['']) AND isset($_POST['AdresseMail']) AND isset($_POST['Mdp']) AND isset($_POST['ConfirmationMdp'])){
-        $joueur  = new Joueur($_POST['id'], $_POST['Pseudo'], $_POST['NOM'],$_POST['Prenom'], $_POST[''], $_POST['AdresseMail'], $_POST['Mdp'], $_POST['ConfirmationMdp']);
-        $joueur->inscription();
-        echo $_POST['pseudo'];
-        echo $_POST['NOM'];
-        echo $_POST['Prenom'];
-        echo $_POST[''];
-        echo $_POST['AdresseMail'];
-        echo $_POST['Mdp'];
-        echo $_POST['ConfirmationMdp'];
-    }
-
+if(isset($_POST['Pseudo']) AND isset($_POST['NOM']) AND isset($_POST['Prenom']) AND isset($_POST['datenaissance']) AND isset($_POST['AdresseMail']) AND isset($_POST['Mdp']) AND isset($_POST['ConfirmationMdp'])){
+    $joueur  = new Joueur($_POST['Pseudo'], $_POST['NOM'],$_POST['Prenom'], $_POST['datenaissance'], $_POST['AdresseMail'], $_POST['Mdp'], $_POST['ConfirmationMdp']);
+    $joueur->inscription();
+    echo $_POST['Pseudo'];
+    echo $_POST['NOM'];
+    echo $_POST['Prenom'];
+    echo $_POST['datenaissance'];
+    echo $_POST['AdresseMail'];
+    echo $_POST['Mdp'];
+    echo $_POST['ConfirmationMdp'];
+    echo $joueur->pseudo;
+}
 ?>
 
 

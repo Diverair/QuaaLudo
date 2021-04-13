@@ -1,7 +1,6 @@
 <?php
 
-class Joueur {
-    public $id = 0;
+class Joueur{
     public $pseudo = null;
     public $nom = null;
     public $prenom = null;
@@ -12,7 +11,6 @@ class Joueur {
 
     /**
      * Joueur constructor.
-     * @param int $id
      * @param null $pseudo
      * @param null $nom
      * @param null $prenom
@@ -21,9 +19,8 @@ class Joueur {
      * @param null $mdp
      * @param null $confirmationmdp
      */
-    public function __construct($id, $pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp, $confirmationmdp)
-    {
-        $this->id = $id;
+    public function __construct($pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp, $confirmationmdp){
+        echo '1';
         $this->pseudo = $pseudo;
         $this->nom = $nom;
         $this->prenom = $prenom;
@@ -31,14 +28,15 @@ class Joueur {
         $this->adressemail = $adressemail;
         $this->mdp = $mdp;
         $this->confirmationmdp = $confirmationmdp;
+        echo '2';
     }
 
 
     public function inscription(){
         echo '3';
-        $pdo = new PDO('mysql:host=localhost;port=8889;dbname=quaeludo','root','root');
+        $pdo = new PDO('mysql:host=localhost;port=8889;dbname=QuaeLudo','root','root');
         echo '4';
-        $req = $pdo->prepare("INSERT INTO JOUEUR(Pseudo, NOM, Prenom, DateNaissance, AdresseMail, Mdp, ConfirmationMdp) VALUES (:pseudo, :nom, :prenom, :datenaissance, :adressemail, :mdp, :confirmationmdp)");
+        $req = $pdo->prepare("INSERT INTO JOUEUR(pseudo, nom, prenom, datenaissance, adressemail, mdp, confirmationmdp) VALUES (:pseudo, :nom, :prenom, :datenaissance, :adressemail, :mdp, :confirmationmdp)");
         echo '5';
         $req->execute(
             array(
@@ -46,7 +44,7 @@ class Joueur {
                 ":nom" => $this->nom,
                 ":prenom" => $this->prenom,
                 ":datenaissance" => $this->datenaissance,
-                "adressemail" => $this->adressemail,
+                ":adressemail" => $this->adressemail,
                 ":mdp" => $this->mdp,
                 ":confirmationmdp" => $this->confirmationmdp
             )

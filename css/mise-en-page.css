@@ -6,6 +6,7 @@ body{
     text-align: center;
 }
 
+
 .SVG-Fond{
     position: absolute;
     z-index: 0;
@@ -44,9 +45,7 @@ header>div>svg{
     padding: 5px 15px;
 }
 
-svg{
-    cursor: pointer;
-}
+
 
 /* Spécifique */
     /* inscriptionconnexion.html*/

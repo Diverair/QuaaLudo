@@ -18,7 +18,7 @@ class Groupe{
 
     public function addIdGroupe(){
         echo '3';
-        $pdo = new PDO('mysql:host=localhost;port=8889;dbname=quaeludo','root','root');
+        $pdo = new PDO('mysql:host=localhost;port=8889;dbname=QuaeLudo','root','root');
         echo '4';
         $req = $pdo->prepare("INSERT INTO GROUPE(nom, description) VALUES (:nom, :description)");
         echo '5';

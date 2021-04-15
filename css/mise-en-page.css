@@ -8,6 +8,7 @@
         }
 
 
+
     /* Images */
         img{
         width: 50px;
@@ -15,11 +16,13 @@
     }
 
 
+
     /* SVG */
         svg{
         width: 30px;
         height: auto;
     }
+
 
 
     /* Header */
@@ -57,6 +60,35 @@
             position: relative;
             top: 10px;
             transform: translateY(-20px);
+        }
+
+
+
+
+    /* Menu-bas-page */
+        .Menu-bas-page{
+            background-color: #157E1C;
+            width: 100vw;
+            height: 60px;
+            display: flex;
+            text-align: center;
+            position: fixed;
+            bottom: 50px;
+            padding-top: 10px;
+        }
+
+        .Menu-bas-page>a{
+            width: 100%;
+        }
+
+        .Menu-bas-page>a>svg{
+            width: 30px;
+        }
+
+        .Menu-bas-page>a>h6{
+            margin: 0;
+            position: relative;
+            top: 0;
         }
 
 

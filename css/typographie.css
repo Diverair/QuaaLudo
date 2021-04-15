@@ -61,6 +61,14 @@
             color: #FAFAFA;
         }
 
+    /* Menu Bas page */
+        .Menu-bas-page>a>h6{
+            font-family: "Source Serif Pro", sans-serif;
+            font-size: 10px;
+            color: #FAFAFA;
+            font-weight: lighter;
+        }
+
 
 
 /* Typographie Spécifique (Ordonnée par page) */

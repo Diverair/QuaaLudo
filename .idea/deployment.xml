@@ -5,7 +5,7 @@
       <paths name="quaeludo">
         <serverdata>
           <mappings>
-            <mapping deploy="/sites/quaeludo.raphbonin.fr" local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

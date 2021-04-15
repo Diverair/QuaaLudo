@@ -44,7 +44,7 @@
     }
 
     /* Texte Header */
-        .header-logo-nom>a{
+        .header-nom>a{
             font-family: "Source Serif Pro", sans-serif;
             font-size: 34px;
             color: #FAFAFA;

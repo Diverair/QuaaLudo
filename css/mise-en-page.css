@@ -43,15 +43,22 @@
         }
 
         .header-logo-nom{
+            display: flex;
             width: 70%;
-            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-logo{
+            margin-right: 5px;
         }
 
         .header-logo-nom>a{
             position: relative;
-            top: 0;
+            top: 10px;
             transform: translateY(-20px);
         }
+
 
 
     /* Footer */

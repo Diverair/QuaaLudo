@@ -10,7 +10,10 @@
     }
 
     h2 {
-
+        font-family: "Source Serif Pro", sans-serif;
+        font-size: 34px;
+        font-weight: bold;
+        color: #222222;
     }
 
     h3{
@@ -33,7 +36,9 @@
     }
 
     p{
-
+        font-family: Raleway, serif;
+        font-size: 14px;
+        font-weight: normal;
     }
 
     a{
@@ -78,6 +83,24 @@
 /* Typographie Spécifique (Ordonnée par page) */
     /* Accueil.html */
     /* Connexion.html */
+        .Page-Connexion>div>section>p>a{
+            font-family: Raleway, serif;
+            font-size: 14px;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+
+        .Page-Connexion>.page>section>form>label>input[type="submit"]{
+            color: #FAFAFA;
+            font-family: "Source Serif Pro", sans-serif;
+            font-size: 2vh;
+            font-weight: bold;
+        }
+
+        .Page-Connexion>.page>section>form>label>input[value]{
+            font-style: italic;
+        }
+
     /* Compte.html */
     /* Inscription.html */
     /* Groupes.html */

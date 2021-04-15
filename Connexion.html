@@ -100,22 +100,20 @@
     <section class="Connexion">
         <h2>Se connecter</h2>
         <form action="Compte.html">
-            <p>Pseudo</p>
-            <label>
-                <input type="text" name="Pseudo">
+            <label class="Label-pseudo">
+                <input type="text" name="Pseudo" value="Votre pseudo" onclick="this.select()">
             </label>
-            <p>Mot-de-passe</p>
-            <label>
-                <input type="text" name="Mdp">
+
+            <label class="Label-mdp">
+                <input type="text" name="Mdp" value="Votre mot de passe" onclick="this.select()">
             </label>
-            <label>
+            <label class="Label-valider">
                 <input type="submit" value="Valider">
             </label>
         </form>
     </section>
 
     <section class="Inscription">
-        <h2>Je suis nouveau ici</h2>
         <p>Je m'incris par <a href="Inscription.html">ici</a></p>
     </section>
 </div>

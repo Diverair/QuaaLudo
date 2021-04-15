@@ -211,6 +211,7 @@
     /* Connexion.html */
         .Page-Connexion{
             overflow: hidden;
+            text-align: center;
         }
 
         .page{
@@ -230,6 +231,51 @@
             position: relative;
             z-index: 1;
         }
+
+        .Page-Connexion>.page>section>form{
+            display: grid;
+            grid-template-columns: repeat(5, 15vw);
+            grid-template-rows: repeat(8, 3vh);
+            border: #555555 solid 1px;
+            border-radius: 10px;
+            width: calc(5 * 15vw);
+            margin: 0 auto;
+            background-color: #FFFFFFA8;
+        }
+
+        .Page-Connexion>.page>section>form>.Label-pseudo{
+            grid-column: 2/5;
+            grid-row: 2/3;
+        }
+
+        .Page-Connexion>.page>section>form>.Label-mdp{
+            grid-column: 2/5;
+            grid-row: 4/5;
+        }
+
+        .Page-Connexion>.page>section>form>.Label-valider{
+            grid-column: 2/5;
+            grid-row: 7/8;
+        }
+
+        .Page-Connexion>.page>section>form>label>input{
+            width: calc(3 * 15vw);
+            height: 3vh;
+            border: #555555 solid 1px;
+            border-radius: 5px;
+        }
+
+        .Page-Connexion>.page>section>form>label>input[type="submit"]{
+            width: 15vw;
+            height: 3vh;
+            border: #157E1C solid 1px;
+            background-color: #157E1C;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+
 
 
     /* Compte.html */

@@ -158,6 +158,53 @@
 
 /* Mise en page Spécifique (Ordonnée par page) */
     /* Accueil.html */
+
+        .page-accueil h1 {
+            text-align: center;
+        }
+
+        .carte-accueil{
+            text-align: center;
+            background-color: #F2F2F2;
+            border: 10px solid #157E1C;
+            border-radius: 20px;
+            width: 230px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .carte-accueil>#logo-carte1 {
+            margin-right: 110px;
+        }
+
+        #logo-carte1, #logo-carte2{
+            margin-top: 10px;
+        }
+
+        .carte-accueil>h2{
+            color: #157E1C;
+            margin-bottom: 60px;
+        }
+
+        .carte-accueil>p{
+            width: 110px;
+            margin-right: auto;
+            margin-left: auto;
+            line-height: 30px;
+            margin-bottom: 60px;
+            font-size: 20px;
+        }
+
+        .carte-accueil>form>button {
+            color: #F2F2F2;
+            background-color: #157E1C;
+            border-style: none;
+            border-radius: 15px;
+            width: 100px;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+
     /* Connexion.html */
     /* Compte.html */
     /* Inscription.html */

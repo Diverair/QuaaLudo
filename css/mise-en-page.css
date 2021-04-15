@@ -1,75 +1,19 @@
-/* Général */
-body{
-    height: 100vh;
-    /*overflow: hidden;*/
-    margin: 0;
-    text-align: center;
-}
-
-
-.SVG-Fond{
-    position: absolute;
-    z-index: 0;
-    height: calc(90vh - 150px);
-    width: auto;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-header{
-    background-color: #157E1C;
-    display: flex;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    padding: 10px 25px;
-}
-
-header>div>svg{
-    width: auto;
-    height: 50px;
-}
-
-.logo-nom{
-    width: 100%;
-    text-align: center;
-}
-
-.logo-header{
-    width: 50px;
-    height: 50px;
-}
-
-.logo-nom>a {
-    margin: 0;
-    padding: 5px 15px;
-}
+/* Mise en page Générale */
+    /* Body */
+    /* Header */
+    /* Footer */
 
 
 
-/* Spécifique */
-    /* inscriptionconnexion.html*/
-    section{
-        position: relative;
-        z-index: 1;
-        height: calc((90vh - 150px)/2);
-        margin: auto 0;
-        vertical-align: center;
-    }
-
-    button{
-        background-color: #157E1C;
-        border-radius: 40px;
-        border: #157E1C solid 1px;
-        width: 60%;
-        height: 80px;
-    }
-
-
-
-
-    /* inscription.php */
-    form{
-        position: relative;
-        z-index: 1;
-    }
+/* Mise en page Spécifique (Ordonnée par page)*/
+    /* Accueil.html */
+    /* Connexion.html */
+    /* Compte.html */
+    /* Inscription.html */
+    /* Groupes.html */
+    /* Ludotheques.html */
+    /* Groupe.html */
+    /* Ludotheque.html */
+    /* ChoixDuJeu.html */
+    /* MentionsLegales.html */
+    /* Contact.html */

@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="css/typographie.css">
 </head>
 <body>
-<?php   require_once 'BDD/Classes/class.Joueur.php';
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
-        error_reporting(E_ALL);
-?>
 <header>
     <div class="bouton-compte">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -36,17 +31,15 @@
         </svg>
     </div>
     <div class="logo-nom">
-        <img src="css/img/Logo/logo.png" class="logo-header" alt="Logo Quae Ludo">
-        <a href="accueil.html">Quae Ludo</a>
+        <a href="Accueil.html"><img src="css/img/Logo/logo.png" class="logo-header" alt="Logo Quae Ludo"></a>
+        <a href="Accueil.html">Quae Ludo</a>
     </div>
     <div class="bouton-annuler">
         <svg xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 352 512">
             <path fill="#FAFAFA"
                   d="M242.72 256l100.07-100.07
-                  c12.28-12.28 12.28-32.19 0-44.48
-                  l-22.24-22.24
-                  c-12.28-12.28-32.19-12.28-44.48 0
+                  c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0
                   L176 189.28 75.93 89.21
                   c-12.28-12.28-32.19-12.28-44.48 0
                   L9.21 111.45
@@ -61,7 +54,6 @@
                   l22.24-22.24
                   c12.28-12.28 12.28-32.19 0-44.48
                   L242.72 256z">
-
             </path>
         </svg>
     </div>
@@ -117,39 +109,7 @@
               stroke-miterlimit="10"
               stroke-width="3"/>
     </svg>
-    <form action="inscription.php" method="post">
-        <label>
-            <input type="text" name="Pseudo" value="Pseudo" onclick="this.select()">
-        </label>
-        <label>
-            <input type="text" name="NOM" value="NOM" onclick="this.select()">
-        </label>
-        <label>
-            <input type="text" name="Prenom" value="Prénom" onclick="this.select()">
-        </label>
-        <label>
-            <input type="date" name="datenaissance" value="Date de Naissance"  onclick="this.select()">
-        </label>
-        <label>
-            <input type="text" name="AdresseMail" value="Adresse mail" onclick="this.select()">
-        </label>
-        <label>
-            <input type="text" name="Mdp" value="Mot-de-passe" onclick="this.select()">
-        </label>
-        <label>
-            <input type="text" name="ConfirmationMdp" value="Confimation mot-de-passe" onclick="this.select()">
-        </label>
-        <input type="submit" value="valider">
-    </form>
 </div>
-<?php
-if(isset($_POST['Pseudo']) AND isset($_POST['NOM']) AND isset($_POST['Prenom']) AND isset($_POST['datenaissance']) AND isset($_POST['AdresseMail']) AND isset($_POST['Mdp'])){
-    $joueur  = new Joueur($_POST['Pseudo'], $_POST['NOM'],$_POST['Prenom'], $_POST['datenaissance'], $_POST['AdresseMail'], $_POST['Mdp']);
-    $joueur->inscription();
-}
-?>
-
-
 
 </body>
 </html>

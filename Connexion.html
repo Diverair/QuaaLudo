@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" sizes="16x16" href="css/img/Logo/logo.png">
-    <title>Quae Ludo | Connexion</title>
+    <title>Quae Ludo | Se connecter</title>
     <link rel="stylesheet" href="css/mise-en-page.css">
     <link rel="stylesheet" href="css/typographie.css">
 </head>
@@ -31,8 +31,8 @@
         </svg>
     </div>
     <div class="logo-nom">
-        <img src="css/img/Logo/logo.png" class="logo-header" alt="Logo Quae Ludo">
-        <h4>Quae Ludo</h4>
+        <a href="Accueil.html"><img src="css/img/Logo/logo.png" class="logo-header" alt="Logo Quae Ludo"></a>
+        <a href="Accueil.html">Quae Ludo</a>
     </div>
     <div class="bouton-annuler">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -110,18 +110,45 @@
               stroke-width="3"/>
     </svg>
 
-    <form action="Test.php" method="post">
-        <p>
+    <section class="Connexion">
+        <h2>Se connecter</h2>
+        <form action="Compte.html">
+            <p>Pseudo</p>
             <label>
-                <input type="text" name="identifiant">
+                <input type="text" name="Pseudo">
+            </label>
+            <p>Mot-de-passe</p>
+            <label>
+                <input type="text" name="Mdp">
             </label>
             <label>
-                <input type="text" name="mdp">
+                <input type="submit" value="Valider">
             </label>
-            <input type="submit" value="valider">
-        </p>
-    </form>
+        </form>
+    </section>
+
+    <section class="Inscription">
+        <h2>Je suis nouveau ici</h2>
+        <p>Je m'incris par <a href="Inscription.html">ici</a></p>
+    </section>
 </div>
+
+<script>
+    (function () {
+        "use strict";
+
+
+        let croix = document.querySelector('.bouton-annuler');
+
+        function annuler(){
+            history.back();
+        }
+
+        croix.addEventListener("click", annuler);
+    }());
+
+
+</script>
 
 
 

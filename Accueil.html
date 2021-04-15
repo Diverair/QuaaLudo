@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/mise-en-page.css">
     <link rel="stylesheet" href="css/typographie.css">
 </head>
-<body>
+<body class="Accueil">
 <header>
     <div class="header-bouton-compte">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -138,5 +138,22 @@
         <a href="Contact.html">Contact</a>
     </div>
 </div>
+
+<script>
+    (function () {
+        "use strict";
+
+
+        let compte = document.querySelector('.header-bouton-compte');
+
+        function Connexion(){
+            document.location.href="Connexion.html";
+        }
+
+        compte.addEventListener("click", Connexion);
+    }());
+
+
+</script>
 </body>
 </html>

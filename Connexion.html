@@ -9,27 +9,9 @@
     <link rel="stylesheet" href="css/mise-en-page.css">
     <link rel="stylesheet" href="css/typographie.css">
 </head>
-<body>
+<body class="Page-Connexion">
 <header>
     <div class="header-bouton-compte">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path fill="#FAFAFA"
-                  d="M224 256
-                  c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128
-                  s57.3 128 128 128z
-                  m89.6 32h-16.7
-                  c-22.2 10.2-46.9 16-72.9 16
-                  s-50.6-5.8-72.9-16
-                  h-16.7
-                  C60.2 288 0 348.2 0 422.4
-                  V464
-                  c0 26.5 21.5 48 48 48
-                  h352
-                  c26.5 0 48-21.5 48-48
-                  v-41.6
-                  c0-74.2-60.2-134.4-134.4-134.4z">
-            </path>
-        </svg>
     </div>
     <div class="header-logo-nom">
         <div class="header-logo">
@@ -143,7 +125,7 @@
         "use strict";
 
 
-        let croix = document.querySelector('.bouton-annuler');
+        let croix = document.querySelector('.header-bouton-annuler');
 
         function annuler(){
             history.back();

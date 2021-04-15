@@ -19,9 +19,10 @@
 
     /* SVG */
         svg{
-        width: 30px;
-        height: auto;
-    }
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+        }
 
 
 
@@ -116,7 +117,7 @@
             background-color: #222222;
             width: 100vw;
             text-align: center;
-            padding-bottom: 20px;
+            padding-bottom: 55px;
         }
 
         .footer-menu{
@@ -158,8 +159,7 @@
 
 /* Mise en page Spécifique (Ordonnée par page) */
     /* Accueil.html */
-
-        .page-accueil h1 {
+        .page-accueil{
             text-align: center;
         }
 
@@ -177,7 +177,8 @@
             margin-right: 110px;
         }
 
-        #logo-carte1, #logo-carte2{
+        #logo-carte1,
+        #logo-carte2{
             margin-top: 10px;
         }
 
@@ -208,6 +209,29 @@
         /*yo*/
 
     /* Connexion.html */
+        .Page-Connexion{
+            overflow: hidden;
+        }
+
+        .page{
+            text-align: center;
+        }
+
+        .page>svg{
+            width: auto;
+            height: 80%;
+            cursor: default;
+            position: absolute;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+        .Page-Connexion>.page>section{
+            position: relative;
+            z-index: 1;
+        }
+
+
     /* Compte.html */
     /* Inscription.html */
     /* Groupes.html */

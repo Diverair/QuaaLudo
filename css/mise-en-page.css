@@ -80,7 +80,7 @@
         .Menu-bas-page{
             background-color: #157E1C;
             width: 100vw;
-            height: 50px;
+            height: 55px;
             display: flex;
             text-align: center;
             position: fixed;
@@ -88,18 +88,25 @@
             padding-top: 10px;
         }
 
-        .Menu-bas-page>a{
+        .Menu-bas-page>div{
             width: 100%;
         }
 
-        .Menu-bas-page>a>svg{
+        .Menu-bas-page>div>a>svg{
             width: 30px;
         }
 
-        .Menu-bas-page>a>h6{
-            margin: 0;
-            position: relative;
-            top: 0;
+        .Menu-bas-page>div>a:nth-child(2n){
+            width: 100%;
+            margin: 0 0 5px;
+        }
+
+        .menu-Accueil>svg{
+            margin-bottom: 3px;
+        }
+
+        .menu-Groupes>svg{
+            margin: 3px 0;
         }
 
 

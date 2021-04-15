@@ -62,7 +62,11 @@
         }
 
     /* Menu Bas page */
-        .Menu-bas-page>a>h6{
+        .Menu-bas-page>div>a>img{
+            float: none;
+        }
+
+        .Menu-bas-page>div>a{
             font-family: "Source Serif Pro", sans-serif;
             font-size: 10px;
             color: #FAFAFA;

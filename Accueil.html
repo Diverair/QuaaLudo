@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/mise-en-page.css">
     <link rel="stylesheet" href="css/typographie.css">
 </head>
-<body>
+<body class="Accueil">
 <header>
     <div class="header-bouton-compte">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -42,7 +42,7 @@
     <div class="header-bouton-annuler">
         <svg xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 352 512">
-            <path fill="#FAFAFA"
+            <path fill="#157E1C"
                   d="M242.72 256l100.07-100.07
                   c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0
                   L176 189.28 75.93 89.21
@@ -154,5 +154,22 @@
         <a href="Contact.html">Contact</a>
     </div>
 </div>
+
+<script>
+    (function () {
+        "use strict";
+
+
+        let compte = document.querySelector('.header-bouton-compte');
+
+        function Connexion(){
+            document.location.href="Connexion.html";
+        }
+
+        compte.addEventListener("click", Connexion);
+    }());
+
+
+</script>
 </body>
 </html>

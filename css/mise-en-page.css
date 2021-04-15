@@ -117,7 +117,7 @@
             background-color: #222222;
             width: 100vw;
             text-align: center;
-            padding-bottom: 55px;
+            padding-bottom: 20px;
         }
 
         .footer-menu{
@@ -159,8 +159,17 @@
 
 /* Mise en page Spécifique (Ordonnée par page) */
     /* Accueil.html */
+
         .page-accueil{
             text-align: center;
+            background-image: url("img/Landing-page/pile-de-jeux.png");
+            background-repeat: no-repeat;
+            background-size: 60vh;
+            background-position: top center;
+        }
+
+        .page-accueil .background {
+            background-color: #F2F2F2D8;
         }
 
         .carte-accueil{
@@ -206,7 +215,25 @@
             margin-bottom: 20px;
         }
 
-        /*yo*/
+        .info1{
+            background-color: #222222;
+            color: #F2F2F2;
+            height: 200px;
+            text-align: center;
+        }
+
+        .info1 h4 {
+            color: #F2CB05;
+            margin-bottom: 40px;
+        }
+
+        .info1 p{
+            margin: 40px;
+        }
+
+        .info1 form button{
+            margin-bottom: 30px;
+        }
 
     /* Connexion.html */
         .Page-Connexion{

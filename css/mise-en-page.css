@@ -39,10 +39,13 @@
 
         .header-bouton-compte,
         .header-bouton-annuler{
-            margin: 5px 0;
+            margin: 10px 0;
         }
 
-        header>div>svg,
+        header>div>svg{
+            height: 25px;
+        }
+
         header>div>div>a>img{
             width: 30px;
         }

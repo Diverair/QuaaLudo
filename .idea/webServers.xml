@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d165b510-542a-4b6c-9d7a-05fc111bfd0a" name="quaeludo">
+        <fileTransfer rootFolder="/home/clients/66325206fb8268800596e8cd72b09558" accessType="SFTP" host="2y5qe.ftp.infomaniak.com" port="22" sshConfigId="c310f9ce-f432-4de6-a7df-5ab4c9553466" sshConfig="2y5qe_raphbonin@2y5qe.ftp.infomaniak.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

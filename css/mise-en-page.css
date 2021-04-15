@@ -154,7 +154,42 @@
         }
 
 
+    /* Form */
+        input{
+            width: calc(3 * 15vw);
+            height: 3vh;
+            border: #555555 solid 1px;
+            border-radius: 5px;
+        }
 
+        input[type="submit"]{
+            width: 15vw;
+            height: 3vh;
+            border: #157E1C solid 1px;
+            background-color: #157E1C;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+/*Mise en page Pour plusieurs pages*/
+    /* Connexion/Inscription */
+    .page{
+        text-align: center;
+    }
+
+    .page>svg{
+        width: auto;
+        height: 80%;
+        cursor: default;
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+
+    .page>section{
+        position: relative;
+        z-index: 1;
+    }
 
 
 /* Mise en page Spécifique (Ordonnée par page) */
@@ -241,24 +276,6 @@
             text-align: center;
         }
 
-        .page{
-            text-align: center;
-        }
-
-        .page>svg{
-            width: auto;
-            height: 80%;
-            cursor: default;
-            position: absolute;
-            transform: translateX(-50%);
-            z-index: 0;
-        }
-
-        .Page-Connexion>.page>section{
-            position: relative;
-            z-index: 1;
-        }
-
         .Page-Connexion>.page>section>form{
             display: grid;
             grid-template-columns: repeat(5, 15vw);
@@ -285,28 +302,76 @@
             grid-row: 7/8;
         }
 
-        .Page-Connexion>.page>section>form>label>input{
-            width: calc(3 * 15vw);
-            height: 3vh;
+
+    /* Compte.html */
+    /* Inscription.html */
+        .Page-Inscription{
+            text-align: center;
+        }
+
+        .Page-Inscription>.page>section>form{
+            display: grid;
+            grid-template-columns: 10px 1fr 20px 1fr 10px;
+            grid-template-rows: repeat(8, 20px 1fr);
+            width: 100%;
+        }
+
+        .Page-Inscription>.page>section>form>.Label-pseudo{
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+
+        .Page-Inscription>.page>section>form>.Label-nom{
+            grid-column: 4/5;
+            grid-row: 4/5;
+        }
+
+        .Page-Inscription>.page>section>form>.Label-prenom{
+            grid-column: 4/5;
+            grid-row: 6/7;
+        }
+
+        .Page-Inscription>.page>section>form>.Label-datenaissance{
+            grid-column: 4/5;
+            grid-row: 8/9;
+        }
+
+        .Page-Inscription>.page>section>form>.Label-adressemail{
+            grid-column: 2/5;
+            grid-row: 10/11;
+        }
+
+        .Page-Inscription>.page>section>form>.Label-mdp{
+            grid-column: 2/5;
+            grid-row: 12/13;
+        }
+
+        .Page-Inscription>.page>section>form>.Label-confirmationmpd{
+            grid-column: 2/5;
+            grid-row: 14/15;
+        }
+        .Page-Inscription>.page>section>form>.Label-valider{
+            grid-column: 2/5;
+            grid-row: 16/17;
+        }
+
+        .Page-Inscription>.page>section>form>label>input{
+            width: 100%;
+            height: 100%;
             border: #555555 solid 1px;
             border-radius: 5px;
         }
 
-        .Page-Connexion>.page>section>form>label>input[type="submit"]{
-            width: 15vw;
-            height: 3vh;
+        .Page-Inscription>.page>section>form>label>input[type="submit"]{
+            width: 40%;
+            height: 100%;
             border: #157E1C solid 1px;
             background-color: #157E1C;
             border-radius: 5px;
             cursor: pointer;
-
         }
 
 
-
-
-    /* Compte.html */
-    /* Inscription.html */
     /* Groupes.html */
     /* Ludotheques.html */
     /* Groupe.html */

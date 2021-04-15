@@ -48,6 +48,17 @@
         color: #222222;
     }
 
+    input[value]{
+        font-style: italic;
+    }
+
+    input[type="submit"]{
+        color: #FAFAFA;
+        font-family: "Source Serif Pro", sans-serif;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
     /* Texte Header */
         .header-nom>a{
             font-family: "Source Serif Pro", sans-serif;
@@ -90,19 +101,11 @@
             text-decoration: underline;
         }
 
-        .Page-Connexion>.page>section>form>label>input[type="submit"]{
-            color: #FAFAFA;
-            font-family: "Source Serif Pro", sans-serif;
-            font-size: 2vh;
-            font-weight: bold;
-        }
 
-        .Page-Connexion>.page>section>form>label>input[value]{
-            font-style: italic;
-        }
 
     /* Compte.html */
     /* Inscription.html */
+
     /* Groupes.html */
     /* Ludotheques.html */
     /* Groupe.html */

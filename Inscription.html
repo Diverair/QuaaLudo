@@ -115,30 +115,41 @@
               stroke-width="3"/>
     </svg>
     <section>
-        <form action="Inscription.html" method="post">
+        <form action="Compte.html" method="post">
+
+            <input type="file"
+                   id="avatar" name="avatar"
+                   accept="image/png, image/jpeg">
+
+
             <label class="Label-pseudo">
-                <input type="text" name="Pseudo" value=" Pseudo" onclick="this.select()">
+                <input type="text" name="Pseudo" placeholder=" Pseudo" onclick="this.select()">
             </label>
             <label class="Label-nom">
-                <input type="text" name="NOM" value=" NOM" onclick="this.select()">
+                <input type="text" name="NOM" placeholder=" NOM" onclick="this.select()">
             </label>
             <label class="Label-prenom">
-                <input type="text" name="Prenom" value=" Prénom" onclick="this.select()">
+                <input type="text" name="Prenom" placeholder=" Prénom" onclick="this.select()">
             </label>
             <label class="Label-datenaissance">
-                <input type="date" name="datenaissance" value=" Date de Naissance"  onclick="this.select()">
+                <input type="date" name="datenaissance" placeholder=" Date de Naissance"  onclick="this.select()">
             </label>
             <label class="Label-adressemail">
-                <input type="text" name="AdresseMail" value=" Adresse mail" onclick="this.select()">
+                <input type="email" name="AdresseMail"  pattern="@" placeholder=" Adresse mail" onclick="this.select()">
             </label>
             <label class="Label-mdp">
-                <input type="text" name="Mdp" value=" Mot-de-passe" onclick="this.select()">
+                <input type="password" name="Mdp" placeholder=" Mot-de-passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onclick="this.select()">
             </label>
             <label class="Label-confirmationmpd">
-                <input type="text" name="ConfirmationMdp" value=" Confimation mot-de-passe" onclick="this.select()">
+                <input type="password" name="ConfirmationMdp" placeholder=" Mot-de-passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onclick="this.select()">
             </label>
+
+            <input type="checkbox" id="casementionslegale" name="scales">
+
+            <label for="casementionslegale" class="label-casementionlegale">J'accepte les <a href="MentionsLegales.html">Conditions Générales d'utilisations</a></label>
+
             <label class="Label-valider">
-                <input type="submit" value="valider">
+                <input type="submit" value="Valider">
             </label>
         </form>
     </section>

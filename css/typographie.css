@@ -32,7 +32,10 @@
     }
 
     h6{
-
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #222222;
     }
 
     p{
@@ -65,6 +68,8 @@
             font-size: 24px;
             color: #FAFAFA;
         }
+
+
     /* Texte Footer */
         footer>div>section>a{
             font-family: "Source Serif Pro", sans-serif;
@@ -104,7 +109,27 @@
 
 
     /* Compte.html */
+        .Page-Compte>.page>section>.Compte-Maludotheque>a{
+            color: #FAFAFA;
+        }
+
+
     /* Inscription.html */
+        .Page-Inscription>.page>section>form>.label-casementionlegale{
+            font-size: 14px;
+            font-family: Raleway, sans-serif;
+            text-align: left;
+        }
+
+        .Page-Inscription>.page>section>form>.label-casementionlegale>a{
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+        .Page-Inscription>.page>section>form>label>input[placeholder]{
+            font-style: oblique;
+        }
+
 
     /* Groupes.html */
     /* Ludotheques.html */

@@ -224,6 +224,7 @@
             width: 230px;
             margin-right: auto;
             margin-left: auto;
+            margin-bottom: 20px;
         }
 
         .carte-accueil>#logo-carte1 {
@@ -241,7 +242,7 @@
         }
 
         .carte-accueil>p{
-            width: 110px;
+            width: 150px;
             margin-right: auto;
             margin-left: auto;
             line-height: 30px;
@@ -259,10 +260,10 @@
             margin-bottom: 20px;
         }
 
-        .info1{
+        .info1, .info3{
             background-color: #222222;
             color: #F2F2F2;
-            height: 200px;
+            height: 250px;
             text-align: center;
         }
 
@@ -271,13 +272,83 @@
             margin-bottom: 40px;
         }
 
-        .info1 p{
+        .info1 p, .info3 p{
             margin: 40px;
         }
 
-        .info1 form button{
-            margin-bottom: 30px;
+        .info1 form button {
+            background-color: #F2CB05;
+            border-style: none;
+            border-radius: 15px;
+            width: 100px;
+            height: 20px;
         }
+
+
+        .pub{
+            background-color: #DB0000;
+            height: 200px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display: table;
+        }
+
+        .pub h1 {
+            color: #F2F2F2;
+            font-size: 50px;
+            margin: 0;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .info2, .info4{
+            height: 250px;
+        }
+
+        .info2 h4, .info4 h4 {
+            color: #DB0000;
+            margin-bottom: 40px;
+        }
+
+        .info2 p, .info4 p{
+            margin: 40px;
+        }
+
+        .info2 form button, .info3 form button{
+            border-style: none;
+            border-radius: 15px;
+            width: 100px;
+            height: 20px;
+            color: #F2F2F2;
+        }
+
+        .info2 form button{
+            background-color: #DB0000;
+        }
+
+        .info3{
+            height: 300px;
+        }
+
+        .info3 h4{
+            color: #29a7f5;
+        }
+
+        .info3 form button{
+            background-color: #29a7f5;
+        }
+
+        .info4 form button{
+            background-color: #DB0000;
+            border-style: none;
+            border-radius: 15px;
+            width: 150px;
+            height: 20px;
+            color: #F2F2F2;
+        }
+
 
     /* Connexion.html */
         .Page-Connexion{

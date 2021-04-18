@@ -1,0 +1,25 @@
+/* Page */
+    .page{
+    margin: 0 25px;
+
+}
+
+    .page>section{
+    position: relative;
+    top: calc(60px + 0.83em);
+    min-height: max-content;
+    height: calc(100vh - 60px - 65px);
+
+}
+
+/* Contact */
+    section>div{
+    text-align: center;
+}
+
+    section>hr{
+    width: 40%;
+    height: 4px;
+    background-color: #222222;
+    border: #222222;
+}

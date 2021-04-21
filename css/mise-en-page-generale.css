@@ -1,12 +1,12 @@
 /* Body */
     html{
         scroll-padding-top: 80px;
+        scroll-snap-type: none;
     }
 
     body{
         margin: 0;
         width: 100%;
-
     }
 
 
@@ -111,10 +111,10 @@
     }
 
     .footer-menu-decouvrir{
-        width: calc((100% - 10px) / 3);
+        width: calc((100% - 50px) / 3);
         height: auto;
         text-align: left;
-        margin-left: 5px;
+        margin-left: 25px;
     }
 
     .footer-menu-ensavoirplus{
@@ -127,7 +127,7 @@
         width: calc((100% - 10px) / 3);
         height: auto;
         text-align: right;
-        margin-right: 5px;
+        margin-right: 25px;
     }
 
     .footer-logos-reseaux{

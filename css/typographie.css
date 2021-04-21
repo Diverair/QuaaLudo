@@ -48,6 +48,35 @@
     }
 
 
+/* Couleur typographie */
+    .typo-red{
+        color: #DB0000;
+    }
+
+    .typo-green{
+        color: #157E1C;
+    }
+
+    .typo-blackgrey{
+        color: #222222;
+    }
+
+    .typo-grey{
+        color: #333333;
+    }
+
+    .typo-white{
+        color: #FAFAFA;
+    }
+
+    .typo-yellow{
+        color: #F2CB05;
+    }
+
+    .typo-blue{
+        color: #29a7f5;
+    }
+
 
 /* Typographie Spécifique */
     /* Header */
@@ -70,6 +99,13 @@
         .Menu-bas-page>div>a{
             color: #FAFAFA;
             font-size: 11px;
+        }
+
+
+
+    /* Accueil */
+        .bouton>a{
+            font-size: 20px;
         }
 
 

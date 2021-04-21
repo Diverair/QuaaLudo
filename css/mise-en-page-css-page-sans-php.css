@@ -1,25 +1,127 @@
 /* Page */
     .page{
-    margin: 0 25px;
-
-}
+        margin: 0;
+    }
 
     .page>section{
-    position: relative;
-    top: calc(60px + 0.83em);
-    min-height: max-content;
-    height: calc(100vh - 60px - 65px);
+        position: relative;
+        top: calc(60px + 0.83em);
+        min-height: max-content;
+        height: calc(100vh - 60px - 65px);
+    }
 
-}
+
+/* Couleur */
+    .red{
+        background-color: #DB0000;
+    }
+
+    .green{
+        background-color: #157E1C;
+    }
+
+    .blackgrey{
+        background-color: #222222;
+    }
+
+    .grey{
+        background-color: #333333;
+    }
+
+    .white{
+        background-color: #FAFAFA;
+    }
+
+    .yellow{
+        background-color: #F2CB05;
+    }
+
+    .blue{
+        background-color: #29a7f5;
+    }
+
+
+
+
+/* Accueil */
+    .Accueil>section{
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .carte>svg{
+        position: absolute;
+        transform: translateX(-50%);
+        margin: 10% 0 0;
+        height: 85%;
+        width: auto;
+    }
+
+    .Accueil>section>.carte{
+        width: 250px;
+        height: 383px;
+        border: #157E1C 10px solid;
+        border-radius: 15px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .carte>.carte-logo{
+        display: flex;
+        width: 100%;
+    }
+
+    .carte>.carte-logo>div>img{
+        width: 50px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .carte>.carte-logo>.carte-logo-gauche{
+        text-align: left;
+        width: 50%;
+    }
+
+    .carte>.carte-logo>.carte-logo-droit{
+        text-align: right;
+        width: 50%;
+    }
+
+    .Accueil>section>.carte>p{
+        margin: 0 40px;
+    }
+
+    .bouton{
+        width: 70%;
+        position: relative;
+        margin: 40% auto 0;
+        border-radius: 15px;
+    }
+
+    .Accueil>section>h2{
+        margin-top: 0;
+    }
+
+    .Accueil>section>p{
+        text-align: left;
+        margin: 0 25px;
+    }
+
+
 
 /* Contact */
-    section>div{
-    text-align: center;
-}
+    .Contact>section{
+        text-align: center;
+        margin: 0 25px;
+    }
+
+    .Contact>section>p{
+        text-align: left;
+    }
 
     section>hr{
-    width: 40%;
-    height: 4px;
-    background-color: #222222;
-    border: #222222;
-}
+        width: 40%;
+        height: 4px;
+        background-color: #222222;
+        border: #222222;
+    }

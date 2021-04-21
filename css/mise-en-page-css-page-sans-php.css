@@ -1,45 +1,21 @@
 /* Page */
     .page{
         margin: 0;
+        position: relative;
     }
 
     .page>section{
-        position: relative;
-        top: calc(60px + 0.83em);
+        display: block;
         min-height: max-content;
+        padding-bottom: 40px;
+    }
+
+    .page>section:first-of-type{
+        position: relative;
         height: calc(100vh - 60px - 65px);
+        top: 60px;
+        padding-top: 0;
     }
-
-
-/* Couleur */
-    .red{
-        background-color: #DB0000;
-    }
-
-    .green{
-        background-color: #157E1C;
-    }
-
-    .blackgrey{
-        background-color: #222222;
-    }
-
-    .grey{
-        background-color: #333333;
-    }
-
-    .white{
-        background-color: #FAFAFA;
-    }
-
-    .yellow{
-        background-color: #F2CB05;
-    }
-
-    .blue{
-        background-color: #29a7f5;
-    }
-
 
 
 
@@ -107,6 +83,15 @@
         margin: 0 25px;
     }
 
+    .Accueil>.section-pub>p{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .Accueil>.section-pub>.lienaffiliepub{
+        display: flex;
+    }
+
 
 
 /* Contact */
@@ -124,4 +109,9 @@
         height: 4px;
         background-color: #222222;
         border: #222222;
+    }
+
+/* Mentions-Légales */
+    .MentionsLegales>section{
+        margin: 0 25px;
     }

@@ -39,12 +39,19 @@
         color: #FAFAFA;
     }
 
-    p, a{
+    p, a, li{
         font-family: Raleway, sans-serif;
         font-size: 14px;
         font-weight: normal;
         text-decoration: none;
         color: #222222;
+    }
+
+/* Form */
+    input[type="text"],
+    input[type="password"],
+    input[type="date"]{
+        font-style: italic;
     }
 
 
@@ -113,4 +120,14 @@
         .section-CGU>p:first-of-type,
         section>p>a{
             font-style: italic;
+        }
+
+        .MentionsLegales>section{
+            text-align: center;
+            margin: 0 25px;
+        }
+
+        .MentionsLegales>section>p,
+        .MentionsLegales>section>ul>li{
+            text-align: left;
         }

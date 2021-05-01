@@ -2,6 +2,7 @@
     html{
         scroll-padding-top: 80px;
         scroll-snap-type: none;
+        width: 100%;
     }
 
     body{
@@ -9,7 +10,34 @@
         width: 100%;
     }
 
-    /* Couleur */
+    .page {
+        position: relative;
+        top: 60px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .Page-Accueil>img{
+        position: fixed;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: auto;
+        height: 75%;
+    }
+
+    section{
+        position: relative;
+        z-index: 3;
+        padding: 10px 0 40px;
+    }
+
+
+
+
+
+/* Couleur */
     .red{
         background-color: #DB0000;
     }
@@ -51,15 +79,11 @@
         z-index: 999;
     }
 
-    .header-bouton-compte,
-    .header-bouton-accueil,
-    .header-bouton-annuler{
+    .header-bouton{
         width: 60px;
     }
 
-    .header-bouton-compte>svg,
-    .header-bouton-accueil>svg,
-    .header-bouton-annuler>svg{
+    .header-bouton>a>svg{
         width: 30px;
         margin: calc((60px - 34px)/2) 0;
     }
@@ -84,6 +108,7 @@
         width: auto;
         height: 40px;
     }
+
 
 
 
@@ -118,8 +143,8 @@
     }
 
     .menu-Groupes>svg{
-    margin: 3px 0;
-}
+        margin: 3px 0;
+    }
 
 
 
@@ -131,12 +156,13 @@
         background-color: #222222;
         text-align: center;
         padding-bottom: 80px;
+        padding-top: 0;
     }
 
     .footer-menu{
         display: flex;
         width: 100%;
-        margin-bottom: 25px;
+        padding-bottom: 0;
     }
 
     .footer-menu-decouvrir{
@@ -161,7 +187,7 @@
 
     .footer-logos-reseaux{
         display: flex;
-        margin: 0 auto 25px;
+        margin: 0 auto;
         width: 60%;
         text-align: center;
     }
@@ -180,3 +206,63 @@
     footer>p{
         margin-bottom: 0;
     }
+
+
+/* Objets */
+    .carte{
+        width: 250px;
+        height: 363px;
+        border: #157E1C 10px solid;
+        border-radius: 15px;
+        text-align: center;
+        background-color: #FAFAFA;
+        background-image: url("img/svg/pion.svg");
+        background-size: auto 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        position: relative;
+    }
+
+    .carte>div>div>img{
+        width: 40px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .carte-logo{
+        display: flex;
+    }
+
+    .carte-logo-droit{
+        width: 50%;
+        text-align: right;
+    }
+
+    .carte-logo-gauche{
+        width: 50%;
+        text-align: left;
+    }
+
+
+/* Bouton */
+    .bouton{
+        text-align: center;
+        margin: 50px auto 20px;
+    }
+
+    .bouton>a{
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 20px;
+        padding: 5px 20px;
+    }
+
+
+/* Section */
+    section>h2,
+    section>p{
+        padding: 15px;
+    }
+

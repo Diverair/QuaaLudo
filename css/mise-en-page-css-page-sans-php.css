@@ -1,117 +1,43 @@
-/* Page */
-    .page{
-        margin: 0;
-        position: relative;
-    }
-
-    .page>section{
-        display: block;
-        min-height: max-content;
-        padding-bottom: 40px;
-    }
-
-    .page>section:first-of-type{
-        position: relative;
-        height: calc(100vh - 60px - 65px);
-        top: 60px;
-        padding-top: 0;
-    }
-
-
-
-/* Accueil */
-    .Accueil>section{
+/* Section haut de page */
+    .section-haut-page{
+        height: calc(100vh - 205px);
         text-align: center;
-        padding-top: 25px;
+        background-color: #FAFAFA8F;
+        padding: 40px 20px;
     }
 
-    .carte>svg{
-        position: absolute;
-        transform: translateX(-50%);
-        margin: 10% 0 0;
-        height: 85%;
-        width: auto;
-    }
-
-    .Accueil>section>.carte{
-        width: 250px;
-        height: 383px;
-        border: #157E1C 10px solid;
-        border-radius: 15px;
+    .section-haut-page>h1{
         position: relative;
-        margin: 0 auto;
+        margin: 0 0 75px;
     }
 
-    .carte>.carte-logo{
-        display: flex;
-        width: 100%;
-    }
-
-    .carte>.carte-logo>div>img{
-        width: 50px;
-        height: auto;
-        margin: 10px;
-    }
-
-    .carte>.carte-logo>.carte-logo-gauche{
-        text-align: left;
-        width: 50%;
-    }
-
-    .carte>.carte-logo>.carte-logo-droit{
-        text-align: right;
-        width: 50%;
-    }
-
-    .Accueil>section>.carte>p{
-        margin: 0 40px;
-    }
-
-    .bouton{
-        width: 70%;
+    .section-haut-page>.carte{
         position: relative;
-        margin: 40% auto 0;
-        border-radius: 15px;
+        margin: auto;
     }
 
-    .Accueil>section>h2{
-        margin-top: 0;
+/* Section lien affilié */
+    .section-pub{
+        padding-bottom: 0;
     }
-
-    .Accueil>section>p{
-        text-align: left;
-        margin: 0 25px;
-    }
-
-    .Accueil>.section-pub>p{
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .Accueil>.section-pub>.lienaffiliepub{
+    .lienaffiliepub{
         display: flex;
+        overflow-x: hidden;
     }
-
 
 
 /* Contact */
-    .Contact>section{
+    .section-Nathan>div,
+    .section-Raphael>div,
+    .section-Benoit>div{
         text-align: center;
-        margin: 0 25px;
     }
 
-    .Contact>section>p{
-        text-align: left;
+/* Mentions Légales*/
+    .section-CGU>h1{
+        margin-bottom: 0;
     }
-
-    section>hr{
-        width: 40%;
-        height: 4px;
-        background-color: #222222;
-        border: #222222;
-    }
-
-/* Mentions-Légales */
-    .MentionsLegales>section{
-        margin: 0 25px;
+    .section-CGU>p{
+        margin-bottom: 0;
+        padding: 0;
     }

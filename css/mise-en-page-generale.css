@@ -43,7 +43,7 @@
     }
 
     .green{
-        background-color: #157E1C;
+        background-color: #268F2D;
     }
 
     .blackgrey{
@@ -52,6 +52,10 @@
 
     .grey{
         background-color: #333333;
+    }
+
+    .bluegrey{
+        background-color: #d0cff8;
     }
 
     .white{
@@ -72,7 +76,7 @@
         display: flex;
         top: 0;
         left: 0;
-        background-color: #157E1C;
+        background-color: #268F2D;
         width: 100%;
         height: 60px;
         text-align: center;
@@ -114,7 +118,7 @@
 
 /* Menu-bas-page */
     .Menu-bas-page{
-        background-color: #157E1C;
+        background-color: #268F2D;
         width: 100%;
         height: 55px;
         display: flex;
@@ -212,7 +216,7 @@
     .carte{
         width: 250px;
         height: 363px;
-        border: #157E1C 10px solid;
+        border: #268F2D 10px solid;
         border-radius: 15px;
         text-align: center;
         background-color: #FAFAFA;
@@ -220,7 +224,7 @@
         background-size: auto 90%;
         background-position: center;
         background-repeat: no-repeat;
-        margin: auto;
+        margin: 50px auto;
         position: relative;
     }
 

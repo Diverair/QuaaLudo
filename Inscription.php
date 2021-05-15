@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/mise-en-page-css-page-avec-php.css">
     <link rel="stylesheet" href="css/typographie.css">
 </head>
-<body class="Page-Compte">
+<body class="Page-Inscription">
 <header>
     <div class="header-bouton header-bouton-compte">
         <a href="Compte.html">
@@ -47,7 +47,7 @@
 </header>
 
 
-<div class="page Compte">
+<div class="page Inscription">
     <h1>Je m'inscris</h1>
     <section>
         <form action="Compte.html" method="post">

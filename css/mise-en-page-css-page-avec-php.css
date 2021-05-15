@@ -53,7 +53,31 @@
 .section-image-haut-page>.section-compte-image-compte>img{
     width: 75%;
     height: auto;
-    vertical-align: middle;
+    margin-top: 12.5%;
+}
+
+.section-compte>div{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-compte>div>*{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    bottom: 0;
+}
+
+.section-compte>h3{
+    margin: 0 10px 20px;
+
+}
+
+.section-compte{
+    padding: 0;
+    margin: 5px 0 20px;
 }
 
 /* Ludothèques */

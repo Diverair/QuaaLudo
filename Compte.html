@@ -12,27 +12,7 @@
 </head>
 <body class="Page-Compte">
 <header>
-    <div class="header-bouton header-bouton-compte">
-        <a href="Compte.html">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path fill="#FAFAFA"
-                      d="M224 256
-                      c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128
-                      s57.3 128 128 128z
-                      m89.6 32h-16.7
-                      c-22.2 10.2-46.9 16-72.9 16
-                      s-50.6-5.8-72.9-16
-                      h-16.7
-                      C60.2 288 0 348.2 0 422.4
-                      V464
-                      c0 26.5 21.5 48 48 48
-                      h352
-                      c26.5 0 48-21.5 48-48
-                      v-41.6
-                      c0-74.2-60.2-134.4-134.4-134.4z">
-                </path>
-            </svg>
-        </a>
+    <div class="header-bouton">
     </div>
     <div class="header-logo-nom">
         <div class="header-logo">
@@ -42,7 +22,33 @@
             <a href="Accueil.html">QuaeLudo</a>
         </div>
     </div>
-    <div class="header-bouton">
+    <div class="header-bouton header-bouton-annuler">
+        <a href="ModificationCompte.html">
+            <svg focusable="false" data-prefix="fas" data-icon="user-edit" class="svg-inline--fa fa-user-edit fa-w-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <path fill="#FAFAFA"
+                      d="M224 256
+                      c70.7 0 128-57.3 128-128
+                      S294.7 0 224 0 96 57.3 96 128
+                      s57.3 128 128 128zm89.6 32
+                      h-16.7
+                      c-22.2 10.2-46.9 16-72.9 16
+                      s-50.6-5.8-72.9-16
+                      h-16.7
+                      C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48
+                      h274.9c-2.4-6.8-3.4-14-2.6-21.3
+                      l6.8-60.9 1.2-11.1 7.9-7.9 77.3-77.3
+                      c-24.5-27.7-60-45.5-99.9-45.5z
+                      m45.3 145.3
+                      l-6.8 61c-1.1 10.2 7.5 18.8 17.6 17.6
+                      l60.9-6.8 137.9-137.9-71.7-71.7-137.9 137.8z
+                      M633 268.9
+                      L595.1 231
+                      c-9.3-9.3-24.5-9.3-33.8 0
+                      l-37.8 37.8-4.1 4.1 71.8 71.7 41.8-41.8
+                      c9.3-9.4 9.3-24.5 0-33.9z">
+                </path>
+            </svg>
+        </a>
     </div>
 </header>
 
@@ -54,26 +60,29 @@
         </div>
     </section>
 
-    <h1>Compte</h1>
-
-    <section class="info-compte">
-        <h6>Pseudo</h6>
-        <h6>Âge</h6>
-        <h6></h6>
+    <section class="section-compte info-compte">
+        <div>
+            <h5>Pseudo#id</h5>
+            <h5>Âge</h5>
+        </div>
     </section>
 
-    <section class="categorie-preferee">
+    <section class="section-compte categorie-preferee">
         <h3>Catégorie Préférées</h3>
-        <p class="bouton"><a href="" class="red typo-white">Aventure</a></p>
-        <p class="bouton"><a href="" class="red typo-white">Stratégie</a></p>
-        <p class="bouton"><a href="" class="red typo-white">Hasard</a></p>
+        <div>
+            <p class="bouton"><a href="" class="red typo-white">Aventure</a></p>
+            <p class="bouton"><a href="" class="red typo-white">Stratégie</a></p>
+            <p class="bouton"><a href="" class="red typo-white">Hasard</a></p>
+        </div>
     </section>
 
-    <section class="categorie-preferee">
+    <section class="section-compte categorie-preferee">
         <h3>Jeux préférées</h3>
-        <img src="css/img/Jeux/AventureduRail.png" alt="">
-        <img src="css/img/Jeux/Memoire44.png" alt="">
-        <img src="css/img/Jeux/Monopoly.png" alt="">
+        <div>
+            <img src="css/img/Jeux/AventureduRail.png" alt="">
+            <img src="css/img/Jeux/Memoire44.png" alt="">
+            <img src="css/img/Jeux/Monopoly.png" alt="">
+        </div>
     </section>
     <section>
         <div class="bouton"><a href="Ludotheques.html" class="typo-white green" style="font-size: 30px;">Mes ludothèques</a></div>

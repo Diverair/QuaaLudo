@@ -270,3 +270,12 @@
         padding: 15px;
     }
 
+
+/* Image Haut page */
+.section-image-haut-page{
+    background-size: cover;
+    width: 100%;
+    height: 211px;
+    padding: 0;
+}
+

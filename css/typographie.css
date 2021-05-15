@@ -50,7 +50,7 @@ p, a, li{
     color: #222222;
 }
 
-hr{
+.hr-titre{
     width: 40%;
     border: #222222 1px solid;
 }

@@ -92,6 +92,18 @@
     background-color: #777777;
 }
 
+.fleche1{
+    height: 19px;
+    width: auto;
+    fill: #777777;
+}
+
+.fleche2{
+    height: 19px;
+    width: auto;
+    fill: #FAFAFA;
+}
+
 .info-nom-ludo>h3{
     margin: 0 10px 0 10px;
 }
@@ -105,10 +117,9 @@
     margin: 0 10px 0 0;
 }
 
-.fleche{
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+.fleche1,
+.fleche2{
+    margin: auto 10px auto auto;
 }
 
 .section-liste-choix>hr{

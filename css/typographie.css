@@ -11,11 +11,13 @@ h1, h2, h3, h4, h5, h6{
 h1{
     font-size: 28px;
     color: #222222;
+    text-align: center;
 }
 
 h2{
     font-size: 24px;
     color: #222222;
+    text-align: center;
 }
 
 h3{
@@ -51,6 +53,7 @@ hr{
     width: 40%;
     border: #222222 1px solid;
 }
+
 
 /* Form */
 input[type="text"],
@@ -90,70 +93,71 @@ input[type="date"]{
 }
 
 
+
 /* Typographie Spécifique */
-/* Header */
-header>div>div>a{
-    font-family: "Source Serif Pro", sans-serif;
-    font-size: 24px;
-    color: #FAFAFA;
-}
+    /* Header */
+    header>div>div>a{
+        font-family: "Source Serif Pro", sans-serif;
+        font-size: 24px;
+        color: #FAFAFA;
+    }
 
 
-/* Footer */
-footer>section>section>h3,
-footer>section>section>a,
-footer>p,
-footer>p>a{
-    color: #FAFAFA;
-}
+    /* Footer */
+    footer>section>section>h3,
+    footer>section>section>a,
+    footer>p,
+    footer>p>a{
+        color: #FAFAFA;
+    }
 
-/* Menu bas de Page */
-.Menu-bas-page>div>a{
-    color: #FAFAFA;
-    font-size: 11px;
-}
-
-
-
-/* Accueil */
-.bouton>a{
-    font-size: 20px;
-}
-
-.section-pub>p{
-    font-style: italic;
-}
+    /* Menu bas de Page */
+    .Menu-bas-page>div>a{
+        color: #FAFAFA;
+        font-size: 11px;
+    }
 
 
-/* Contact */
-.section-p{
-    text-align: left;
-    padding: 20px 0;
-}
 
-.section-p>p>a{
-    font-weight: bold;
-    font-style: italic;
-}
+    /* Accueil */
+    .bouton>a{
+        font-size: 20px;
+    }
 
-/* Page Mentions légales*/
-.section-CGU>p:first-of-type,
-.MentionsLegales>section>p>a{
-    font-style: italic;
-}
+    .section-pub>p{
+        font-style: italic;
+    }
 
-.MentionsLegales>section{
-    text-align: center;
-}
 
-.MentionsLegales>section>p,
-.MentionsLegales>section>ul>li{
-    text-align: left;
-}
+    /* Contact */
+    .section-p{
+        text-align: left;
+        padding: 20px 0;
+    }
 
-/* Inscription */
-.Page-Inscription>div>section>form>label.label-casementionlegale,
-.Page-Inscription>div>section>form>label.label-casementionlegale>a{
-    font-size: 10px;
-    font-style: italic;
-}
+    .section-p>p>a{
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    /* Page Mentions légales*/
+    .section-CGU>p:first-of-type,
+    .MentionsLegales>section>p>a{
+        font-style: italic;
+    }
+
+    .MentionsLegales>section{
+        text-align: center;
+    }
+
+    .MentionsLegales>section>p,
+    .MentionsLegales>section>ul>li{
+        text-align: left;
+    }
+
+    /* Inscription */
+    .Page-Inscription>div>section>form>label.label-casementionlegale,
+    .Page-Inscription>div>section>form>label.label-casementionlegale>a{
+        font-size: 10px;
+        font-style: italic;
+    }

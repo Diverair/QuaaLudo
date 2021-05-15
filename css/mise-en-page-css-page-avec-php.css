@@ -55,3 +55,34 @@
     height: auto;
     vertical-align: middle;
 }
+
+/* Ludothèques */
+
+.section-liste-choix {
+    display: flex;
+    background-color: #F2F2F2;
+    padding: 0;
+}
+
+.info-nom-ludo>h3{
+    margin: 0 10px 0 10px;
+}
+
+.info-ludo{
+    display: flex;
+    margin-left: 10px;
+}
+
+.info-ludo>p{
+    margin: 0 10px 0 0;
+}
+
+.fleche{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.section-liste-choix>hr{
+    width: 100%;
+}

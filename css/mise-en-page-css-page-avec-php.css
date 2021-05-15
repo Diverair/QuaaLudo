@@ -35,12 +35,9 @@
 }
 
 /* Compte */
-.section-image-haut-page{
+.Compte>.section-image-haut-page{
     background-image: url("img/Contact/image-fond-benoit.png");
-    background-size: cover;
-    width: 100%;
-    height: 211px;
-    padding: 0;
+
 }
 
 .section-image-haut-page>.section-compte-image-compte{
@@ -49,11 +46,11 @@
     border-radius: 75px;
     width: 150px;
     height: 150px;
+    text-align: center;
 }
 
 .section-image-haut-page>.section-compte-image-compte>img{
     width: 75%;
     height: auto;
-    margin: auto;
-    display: block;
+    vertical-align: middle;
 }

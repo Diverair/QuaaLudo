@@ -8,6 +8,7 @@
     body{
         margin: 0;
         width: 100%;
+        background-color: #FAFAFA;
     }
 
     .page {
@@ -15,6 +16,7 @@
         top: 60px;
         width: 100%;
         margin-bottom: 60px;
+        background-color: #FAFAFA;
     }
 
     .Page-Accueil>img{
@@ -54,12 +56,20 @@
         background-color: #333333;
     }
 
+    .grey2{
+        background-color: #AAAAAA;
+    }
+
     .bluegrey{
         background-color: #d0cff8;
     }
 
     .white{
         background-color: #FAFAFA;
+    }
+
+    .whitegrey{
+        background-color: #777777;
     }
 
     .yellow{
@@ -113,6 +123,19 @@
         height: 40px;
     }
 
+    .header-bouton-plus>svg{
+        height: 40px;
+        margin: calc((60px - 40px)/2) 0;
+    }
+
+    .ferme{
+        display: none;
+    }
+
+    .header-bouton-plus>svg{
+        transform: rotateZ(45deg);
+        height: 30px;
+    }
 
 
 
@@ -285,3 +308,21 @@
         width: calc(100% - 20px);
     }
 
+/* Section haut de page */
+.section-haut-page{
+    min-height: calc(100vh - 205px);
+    height: max-content;
+    text-align: center;
+    background-color: #FAFAFA8F;
+    padding: 20px 20px 40px;
+}
+
+.section-haut-page>div>h1{
+    position: relative;
+    margin: 0 0 25px;
+}
+
+.section-haut-page>.carte{
+    position: relative;
+    margin: auto;
+}

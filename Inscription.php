@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="css/typographie.css">
 </head>
 <body class="Page-Inscription">
+<?php   require_once 'BDD/Classes/class.Joueur.php';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+
 <header>
     <div class="header-bouton header-bouton-compte">
         <a href="Compte.html">
@@ -50,7 +56,7 @@
 <div class="page Inscription">
     <h1>Je m'inscris</h1>
     <section>
-        <form action="Compte.html" method="post">
+        <form action="Inscription.php" method="post">
 
             <input type="file"
                    id="avatar" name="avatar"
@@ -58,7 +64,7 @@
 
             <br/>
             <label class="Label-pseudo">
-                <input type="text" name="Pseudo" placeholder="Pseudo" onclick="this.select()" class="bluegrey">
+                <input type="text" name="Pseudo" placeholder="test" onclick="this.select()" class="bluegrey">
             </label>
             <br/>
             <label class="Label-nom">
@@ -95,5 +101,13 @@
     </section>
 </div>
 
+<?php
+if(isset($_POST['Pseudo']) AND isset($_POST['NOM']) AND isset($_POST['Prenom']) AND isset($_POST['datenaissance']) AND isset($_POST['AdresseMail']) AND isset($_POST['Mdp'])){
+    $date = new DateTime($_POST['datenaissance']);
+    $test = $date->format('Y-m-d');
+    $joueur  = new Joueur($_POST['Pseudo'], $_POST['NOM'],$_POST['Prenom'], $test, $_POST['AdresseMail'], $_POST['Mdp']);
+    $joueur->inscription();
+}
+?>
 </body>
 </html>

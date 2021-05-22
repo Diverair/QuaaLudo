@@ -23,7 +23,6 @@ h2{
 h3{
     font-size: 20px;
     color: #222222;
-
 }
 
 h4{
@@ -81,6 +80,10 @@ input[type="date"]{
     color: #333333;
 }
 
+.typo-whitegrey{
+    color: #777777;
+}
+
 .typo-white{
     color: #FAFAFA;
 }
@@ -102,6 +105,7 @@ input[type="date"]{
         font-size: 24px;
         color: #FAFAFA;
     }
+
 
 
     /* Footer */
@@ -162,3 +166,13 @@ input[type="date"]{
         font-size: 10px;
         font-style: italic;
     }
+
+    /* Ludothèques */
+        .Ajout-ludotheque>h5{
+            font-size: 30px;
+            color: #FAFAFA;
+        }
+
+        .Ajout-ludotheque>p{
+            font-size: 20px;
+        }
